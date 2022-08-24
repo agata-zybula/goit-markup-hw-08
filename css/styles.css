@@ -38,6 +38,7 @@ body {
 }
 
 .board-button {
+  font-family: "Roboto";
   position: absolute;
   width: 200px;
   height: 50px;
@@ -52,6 +53,7 @@ body {
   color: var(--white);
   line-height: 1.88;
   cursor: pointer;
+  letter-spacing: 0.06em;
 }
 
 .board-button:hover,
@@ -175,13 +177,15 @@ body {
 .text-one {
   color: var(--lightgrey);
   line-height: 1.71;
+  letter-spacing: 0.06em;
 }
 
-.third-hearder {
+.third-header {
   font-weight: 700;
   font-size: 14px;
   color: var(--darkgrey);
   line-height: 1.17;
+  letter-spacing: 0.06em;
 }
 
 .second-header {
