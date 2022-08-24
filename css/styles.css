@@ -179,9 +179,9 @@ body {
 
 .third-hearder {
   font-weight: 700;
-  font-size: 16px;
+  font-size: 14px;
   color: var(--darkgrey);
-  line-height: 1.18;
+  line-height: 1.17;
 }
 
 .second-header {
@@ -191,10 +191,18 @@ body {
   line-height: 1.16;
 }
 
+.name-style {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.17;
+  color: var(--darkgrey);
+}
+
 .description {
   font-size: 16px;
   color: var(--lightgrey);
-  line-height: 1.18;
+  line-height: 1.17;
 }
 
 .fourth-header {
