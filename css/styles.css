@@ -1,5 +1,32 @@
-ul,
-li {
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --blue: #2196f3;
+  --mediumgrey: #2f303a;
+  --lightgrey: #757575;
+  --buttonbackground: #f5f4fa;
+  --background: #e5e5e5;
+  --darkgrey: #212121;
+  --bordergrey: #ececec;
+  --cardborder: #eeeeee;
+  --footerlinks: rgba(255, 255, 255, 0.6);
+  --boxshadowcolor: rgba(0, 0, 0, 0.15);
+  --boxshadowcolorone: rgba(0, 0, 0, 0.1);
+  --boxshadowcolortwo: rgba(0, 0, 0, 0.08);
+  --boxshadowcolorthree: rgba(0, 0, 0, 0.12);
+}
+
+body {
+  width: 1600px;
+  height: 1880px;
+  font-family: "Roboto", "Raleway", sans-serif;
+  font-size: 14px;
+  color: var(--black);
+  margin: 0px;
+  background: var(--white);
+}
+
+.style-list {
   display: inline;
   list-style: none;
 }
@@ -7,7 +34,7 @@ li {
 .board {
   width: 1600px;
   height: 600px;
-  background: #2f303a;
+  background: var(--mediumgrey);
 }
 
 .board-button {
@@ -16,50 +43,62 @@ li {
   height: 50px;
   margin-left: 742px;
   margin-top: 360px;
-  background: #2196f3;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  background: var(--blue);
+  box-shadow: 0px 4px 4px var(--boxshadowcolor);
   border-radius: 4px;
   border: none;
   font-weight: 700;
   font-size: 16px;
-  color: #ffffff;
+  color: var(--white);
   line-height: 1.88;
   cursor: pointer;
 }
 
 .board-button:hover,
 .board-button:focus {
-  background-color: #ffffff;
-  color: #2196f3;
+  background-color: var(--white);
+  color: var(--blue);
 }
 
-h1 {
+.header-title {
   font-weight: 900;
   font-size: 44px;
-  color: #ffffff;
+  color: var(--white);
   margin-top: 280px;
   text-align: center;
   line-height: 1.36;
 }
 
-header {
+.style-header {
   width: 1600px;
   height: 80px;
-  background: white;
+}
+
+.portfolio-style-header {
+  border-bottom: 1px solid var(--bordergrey);
 }
 
 .contact {
   font-weight: 500;
   font-size: 14px;
-  color: #757575;
+  color: var(--lightgrey);
   text-decoration: none;
   line-height: 1.14;
   font-style: normal;
 }
 
+.contact-footer {
+  color: var(--footerlinks);
+  text-decoration: none;
+  line-height: 1.14;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+}
+
 .link-two:hover,
 .link-two:focus {
-  color: #2196f3;
+  color: var(--blue);
   text-decoration: none;
   line-height: 1.14;
 }
@@ -75,7 +114,7 @@ header {
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
-  color: #2196f3;
+  color: var(--blue);
   text-decoration: none;
   line-height: 1.19;
 }
@@ -84,162 +123,164 @@ header {
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
-  color: #000000;
+  color: var(--black);
+  text-decoration: none;
+  line-height: 1.19;
+}
+
+.main-title-three {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  color: var(--white);
   text-decoration: none;
   line-height: 1.19;
 }
 
 .menu-links {
   font-weight: 500;
-  font-size: 14px;
-  color: black;
+  color: var(--black);
   border: none;
   line-height: 1.14;
+  background-color: var(--white);
+}
+
+.no-dot {
+  list-style-type: none;
 }
 
 .menu-links .link {
-  color: black;
+  color: var(--black);
   text-decoration: none;
 }
 
 .menu-links .link:hover,
 .menu-links .link:focus {
-  color: #2196f3;
-}
-
-body {
-  position: relative;
-  width: 1600px;
-  height: 1880px;
-  background: #ffffff;
-  font-family: "Roboto";
-  color: black;
+  color: var(--blue);
 }
 
 .location {
-  font-size: 14px;
-  color: #ffffff;
+  color: var(--white);
   line-height: 1.71;
   font-style: normal;
 }
 
-footer {
+.bottom-style {
   position: absolute;
   width: 1600px;
   height: 252px;
-  background: #2f303a;
+  background: var(--mediumgrey);
 }
 
 .text-one {
-  font-size: 14px;
-  color: #757575;
+  color: var(--lightgrey);
   line-height: 1.71;
 }
 
-h3 {
+.third-hearder {
   font-weight: 700;
-  font-size: 14px;
-  color: #212121;
+  font-size: 16px;
+  color: var(--darkgrey);
   line-height: 1.18;
 }
 
-h2 {
+.second-header {
   font-weight: 700;
   font-size: 36px;
-  color: #212121;
+  color: var(--darkgrey);
   line-height: 1.16;
 }
 
 .description {
   font-size: 16px;
-  color: #757575;
+  color: var(--lightgrey);
   line-height: 1.18;
 }
 
-h4 {
+.fourth-header {
   font-weight: 700;
   font-size: 18px;
-  color: #212121;
+  color: var(--darkgrey);
   line-height: 2;
 }
 
 button:hover,
 button:focus {
-  background-color: #2196f3;
-  color: #ffffff;
+  background-color: var(--blue);
+  color: var(--white);
 }
 
 .press-one {
+  font-family: "Roboto";
   width: 121px;
   height: 38px;
-  background: #f5f4fa;
+  background: var(--buttonbackground);
   border: none;
-  font-family: "Roboto";
   font-weight: 500;
   font-size: 16px;
   border-radius: 4px;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px var(--boxshadowcolorone),
+    0px 1px 2px var(--boxshadowcolortwo), 0px 2px 2px var(--boxshadowcolorthree);
   line-height: 1.62;
   cursor: pointer;
 }
 
 .press-two {
+  font-family: "Roboto";
   width: 93px;
   height: 38px;
-  background: #f5f4fa;
+  background: var(--buttonbackground);
   border: none;
-  font-family: "Roboto";
   font-weight: 500;
   font-size: 16px;
   border-radius: 4px;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px var(--boxshadowcolorone),
+    0px 1px 2px var(--boxshadowcolortwo), 0px 2px 2px var(--boxshadowcolorthree);
   line-height: 1.62;
   cursor: pointer;
 }
 
 .press-three {
+  font-family: "Roboto";
   width: 114px;
   height: 38px;
-  background: #f5f4fa;
+  background: var(--buttonbackground);
   border: none;
-  font-family: "Roboto";
   font-weight: 500;
   font-size: 16px;
   border-radius: 4px;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px var(--boxshadowcolorone),
+    0px 1px 2px var(--boxshadowcolortwo), 0px 2px 2px var(--boxshadowcolorthree);
   line-height: 1.62;
   cursor: pointer;
 }
 
 .press-four {
+  font-family: "Roboto";
   width: 91px;
   height: 38px;
-  background: #f5f4fa;
+  background: var(--buttonbackground);
   border: none;
-  font-family: "Roboto";
   font-weight: 500;
   font-size: 16px;
   border-radius: 4px;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px var(--boxshadowcolorone),
+    0px 1px 2px var(--boxshadowcolortwo), 0px 2px 2px var(--boxshadowcolorthree);
   line-height: 1.62;
   cursor: pointer;
 }
 
 .press-five {
+  font-family: "Roboto";
   width: 121px;
   height: 38px;
-  background: #f5f4fa;
+  background: var(--buttonbackground);
   border: none;
-  font-family: "Roboto";
   font-weight: 500;
   font-size: 16px;
   border-radius: 4px;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px var(--boxshadowcolorone),
+    0px 1px 2px var(--boxshadowcolortwo), 0px 2px 2px var(--boxshadowcolorthree);
   line-height: 1.62;
   cursor: pointer;
 }
