@@ -14,16 +14,101 @@
   --boxshadowcolorone: rgba(0, 0, 0, 0.1);
   --boxshadowcolortwo: rgba(0, 0, 0, 0.08);
   --boxshadowcolorthree: rgba(0, 0, 0, 0.12);
+  --boxshadowcolorfour: rgba(0, 0, 0, 0.14);
+  --boxshadowcolorfive: rgba(0, 0, 0, 0.2);
 }
 
 body {
-  width: 1600px;
-  height: 1880px;
   font-family: "Roboto", "Raleway", sans-serif;
   font-size: 14px;
   color: var(--black);
   margin: 0px;
   background: var(--white);
+  margin: 0px;
+  padding: 0px;
+}
+
+.wrap-header-main {
+  width: 1600px;
+  margin: 0 auto;
+  background-color: var(--white);
+}
+
+.portfolio-style-header {
+  width: 1600px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.index-style-header {
+  width: 1200px;
+  height: 80px;
+  display: flex;
+  padding: 25px 0px 24px 0px;
+  align-items: center;
+}
+
+.border-menu {
+  border-bottom: 1px solid var(--bordergrey);
+}
+
+.contact-style-top {
+  display: flex;
+  list-style-type: none;
+  gap: 50px;
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 364px;
+}
+
+.second-menu {
+  display: flex;
+  gap: 8px;
+  padding: 94px 518px 50px 510px;
+  margin: 0px 0px 0px 0px;
+}
+
+.card-set {
+  width: 1170px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin: 0px 215px 94px 215px;
+  padding: 0px 0px 0px 0px;
+}
+
+.container {
+  width: 1200px;
+  margin: 0px;
+}
+
+.card-set-two {
+  display: flex;
+  gap: 30px;
+  list-style-type: none;
+  margin-left: 215px;
+  margin-right: 215px;
+  margin-bottom: 94px;
+  padding-left: 0px;
+}
+
+.description-style {
+  border-left: 1px solid var(--cardborder);
+  border-right: 1px solid var(--cardborder);
+  border-bottom: 1px solid var(--cardborder);
+  margin: 0px 0px 0px 0px;
+}
+
+img {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+.card-size {
+  width: 370px;
+  height: 404px;
+  margin: 0px;
 }
 
 .style-list {
@@ -35,15 +120,14 @@ body {
   width: 1600px;
   height: 600px;
   background: var(--mediumgrey);
+  margin: 0px;
+  padding: 0px;
 }
 
 .board-button {
   font-family: "Roboto";
-  position: absolute;
   width: 200px;
   height: 50px;
-  margin-left: 742px;
-  margin-top: 360px;
   background: var(--blue);
   box-shadow: 0px 4px 4px var(--boxshadowcolor);
   border-radius: 4px;
@@ -55,6 +139,9 @@ body {
   cursor: pointer;
   letter-spacing: 0.06em;
 }
+.button-location {
+  padding: 30px 700px 200px 700px;
+}
 
 .board-button:hover,
 .board-button:focus {
@@ -62,22 +149,24 @@ body {
   color: var(--blue);
 }
 
+.container-lorem-ipsum {
+  display: flex;
+  list-style-type: none;
+  padding: 0px;
+  margin: 94px 0px 94px 215px;
+  gap: 30px;
+}
+
 .header-title {
   font-weight: 900;
   font-size: 44px;
   color: var(--white);
-  margin-top: 280px;
+  margin-top: 0px;
+  margin-bottom: 0px;
   text-align: center;
   line-height: 1.36;
-}
-
-.style-header {
-  width: 1600px;
-  height: 80px;
-}
-
-.portfolio-style-header {
-  border-bottom: 1px solid var(--bordergrey);
+  padding: 200px 0px 0px 0px;
+  letter-spacing: 0.06em;
 }
 
 .contact {
@@ -87,6 +176,8 @@ body {
   text-decoration: none;
   line-height: 1.14;
   font-style: normal;
+  display: flex;
+  white-space: nowrap;
 }
 
 .contact-footer {
@@ -96,6 +187,12 @@ body {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
+  letter-spacing: 0.03em;
+}
+
+.phone-footer {
+  margin: 9px 1154px 9px 215px;
+  white-space: nowrap;
 }
 
 .link-two:hover,
@@ -105,13 +202,6 @@ body {
   line-height: 1.14;
 }
 
-.main-title {
-  margin-top: 24px;
-  margin-right: 1240px;
-  margin-bottom: 25px;
-  margin-left: 215px;
-}
-
 .main-title-one {
   font-family: "Raleway";
   font-weight: 700;
@@ -119,6 +209,7 @@ body {
   color: var(--blue);
   text-decoration: none;
   line-height: 1.19;
+  letter-spacing: 0.03em;
 }
 
 .main-title-two {
@@ -128,6 +219,9 @@ body {
   color: var(--black);
   text-decoration: none;
   line-height: 1.19;
+  display: flex;
+  padding: 0px 0px 0px 215px;
+  letter-spacing: 0.03em;
 }
 
 .main-title-three {
@@ -137,6 +231,17 @@ body {
   color: var(--white);
   text-decoration: none;
   line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.style-header-bottom {
+  display: flex;
+  margin: 60px 1240px 20px 215px;
+}
+
+.mail-footer {
+  margin: 9px 1154px 9px 215px;
+  padding: 0px 0px 9px 0px;
 }
 
 .menu-links {
@@ -145,10 +250,21 @@ body {
   border: none;
   line-height: 1.14;
   background-color: var(--white);
+  display: flex;
+  list-style-type: none;
+  gap: 46px;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 93px;
+  letter-spacing: 0.02em;
 }
 
 .no-dot {
   list-style-type: none;
+}
+
+.no-padding-bottom {
+  list-style-type: none;
+  padding: 0px 0px 0px 0px;
 }
 
 .menu-links .link {
@@ -165,6 +281,9 @@ body {
   color: var(--white);
   line-height: 1.71;
   font-style: normal;
+  letter-spacing: 0.03em;
+  margin: 0px 1139px 9px 215px;
+  white-space: nowrap;
 }
 
 .bottom-style {
@@ -178,6 +297,11 @@ body {
   color: var(--lightgrey);
   line-height: 1.71;
   letter-spacing: 0.06em;
+  white-space: nowrap;
+}
+
+.item-lorem-ipsum {
+  width: 270px;
 }
 
 .third-header {
@@ -193,6 +317,53 @@ body {
   font-size: 36px;
   color: var(--darkgrey);
   line-height: 1.16;
+  margin: 0 auto;
+  display: flex;
+  margin-left: 624px;
+  padding-bottom: 50px;
+}
+
+.box-our-team {
+  background: var(--buttonbackground);
+  width: 1600px;
+  margin: 0px 0px 0px 0px;
+}
+
+.header-our-team {
+  font-weight: 700;
+  font-size: 36px;
+  color: var(--darkgrey);
+  line-height: 1.16;
+  margin: 0 auto;
+  display: flex;
+  margin-left: 695px;
+  padding-bottom: 50px;
+  padding-top: 94px;
+}
+
+.item-team {
+  background: var(--white);
+  width: 270px;
+  height: 368px;
+  margin: 0px 0px 0px 0px;
+  box-shadow: 0px 1px 3px var(--boxshadowcolorthree),
+    0px 1px 1px var(--boxshadowcolorfour), 0px 2px 1px var(--boxshadowcolorfive);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.card-position {
+  display: flex;
+  gap: 30px;
+  padding-left: 0px;
+  margin-left: 215px;
+  padding-bottom: 94px;
+}
+
+.item-team-center {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  white-space: wrap;
 }
 
 .name-style {
@@ -201,12 +372,17 @@ body {
   font-size: 16px;
   line-height: 1.17;
   color: var(--darkgrey);
+  text-align: center;
+  margin: 30px 0px 10px 0px;
 }
 
 .description {
   font-size: 16px;
   color: var(--lightgrey);
   line-height: 1.17;
+  letter-spacing: 0.03em;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 20px 24px;
 }
 
 .fourth-header {
@@ -214,6 +390,9 @@ body {
   font-size: 18px;
   color: var(--darkgrey);
   line-height: 2;
+  letter-spacing: 0.06em;
+  margin: 0px 0px 0px 0px;
+  padding: 20px 0px 4px 24px;
 }
 
 button:hover,
