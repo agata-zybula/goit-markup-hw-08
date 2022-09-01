@@ -28,25 +28,10 @@ body {
   padding: 0px;
 }
 
-.wrap-header-main {
-  width: 1600px;
-  margin: 0 auto;
-  background-color: var(--white);
-}
-
-.portfolio-style-header {
-  width: 1600px;
-  height: 80px;
-  display: flex;
-  align-items: center;
-}
-
-.index-style-header {
+.style-header {
   width: 1200px;
   height: 80px;
   display: flex;
-  padding: 25px 0px 24px 0px;
-  align-items: center;
 }
 
 .border-menu {
@@ -57,15 +42,15 @@ body {
   display: flex;
   list-style-type: none;
   gap: 50px;
-  padding: 0px 0px 0px 0px;
-  margin: 0px 0px 0px 364px;
+  padding: 32px 0px 32px 371px;
 }
 
 .second-menu {
   display: flex;
   gap: 8px;
-  padding: 94px 518px 50px 510px;
-  margin: 0px 0px 0px 0px;
+  justify-content: center;
+  padding-bottom: 50px;
+  list-style-type: none;
 }
 
 .card-set {
@@ -73,23 +58,52 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  margin: 0px 215px 94px 215px;
-  padding: 0px 0px 0px 0px;
+}
+
+h1 {
+  margin: 0px;
+  padding: 0px;
+}
+
+h2 {
+  margin: 0px;
+  padding: 0px;
+}
+
+h3 {
+  margin: 0px;
+  padding: 0px;
+}
+
+h4 {
+  margin: 0px;
+  padding: 0px;
+}
+
+p {
+  margin: 0px;
+  padding: 0px;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
 }
 
 .container {
   width: 1200px;
-  margin: 0px;
+  padding: 0px 15px;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 94px 0px 94px 0px;
 }
 
 .card-set-two {
   display: flex;
   gap: 30px;
   list-style-type: none;
-  margin-left: 215px;
-  margin-right: 215px;
-  margin-bottom: 94px;
-  padding-left: 0px;
 }
 
 .description-style {
@@ -117,7 +131,6 @@ img {
 }
 
 .board {
-  width: 1600px;
   height: 600px;
   background: var(--mediumgrey);
   margin: 0px;
@@ -140,7 +153,17 @@ img {
   letter-spacing: 0.06em;
 }
 .button-location {
-  padding: 30px 700px 200px 700px;
+}
+
+.location-header-button {
+  padding-top: 200px;
+  padding-right: 0px;
+  padding-bottom: 200px;
+  padding-left: 0px;
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  align-items: center;
 }
 
 .board-button:hover,
@@ -153,7 +176,7 @@ img {
   display: flex;
   list-style-type: none;
   padding: 0px;
-  margin: 94px 0px 94px 215px;
+  margin: 0px;
   gap: 30px;
 }
 
@@ -165,7 +188,6 @@ img {
   margin-bottom: 0px;
   text-align: center;
   line-height: 1.36;
-  padding: 200px 0px 0px 0px;
   letter-spacing: 0.06em;
 }
 
@@ -191,7 +213,6 @@ img {
 }
 
 .phone-footer {
-  margin: 9px 1154px 9px 215px;
   white-space: nowrap;
 }
 
@@ -220,7 +241,7 @@ img {
   text-decoration: none;
   line-height: 1.19;
   display: flex;
-  padding: 0px 0px 0px 215px;
+  padding: 25px 0px 25px 0px;
   letter-spacing: 0.03em;
 }
 
@@ -236,12 +257,12 @@ img {
 
 .style-header-bottom {
   display: flex;
-  margin: 60px 1240px 20px 215px;
+  margin-bottom: 20px;
+  padding-top: 60px;
 }
 
 .mail-footer {
-  margin: 9px 1154px 9px 215px;
-  padding: 0px 0px 9px 0px;
+  margin-bottom: 9px;
 }
 
 .menu-links {
@@ -253,8 +274,8 @@ img {
   display: flex;
   list-style-type: none;
   gap: 46px;
-  margin: 0px 0px 0px 0px;
-  padding: 0px 0px 0px 93px;
+  padding: 32px 0px 32px 93px;
+
   letter-spacing: 0.02em;
 }
 
@@ -264,7 +285,6 @@ img {
 
 .no-padding-bottom {
   list-style-type: none;
-  padding: 0px 0px 0px 0px;
 }
 
 .menu-links .link {
@@ -282,13 +302,11 @@ img {
   line-height: 1.71;
   font-style: normal;
   letter-spacing: 0.03em;
-  margin: 0px 1139px 9px 215px;
   white-space: nowrap;
+  margin-bottom: 9px;
 }
 
 .bottom-style {
-  position: absolute;
-  width: 1600px;
   height: 252px;
   background: var(--mediumgrey);
 }
@@ -317,16 +335,12 @@ img {
   font-size: 36px;
   color: var(--darkgrey);
   line-height: 1.16;
-  margin: 0 auto;
-  display: flex;
-  margin-left: 624px;
   padding-bottom: 50px;
+  text-align: center;
 }
 
 .box-our-team {
   background: var(--buttonbackground);
-  width: 1600px;
-  margin: 0px 0px 0px 0px;
 }
 
 .header-our-team {
@@ -334,11 +348,8 @@ img {
   font-size: 36px;
   color: var(--darkgrey);
   line-height: 1.16;
-  margin: 0 auto;
-  display: flex;
-  margin-left: 695px;
+  text-align: center;
   padding-bottom: 50px;
-  padding-top: 94px;
 }
 
 .item-team {
@@ -354,9 +365,6 @@ img {
 .card-position {
   display: flex;
   gap: 30px;
-  padding-left: 0px;
-  margin-left: 215px;
-  padding-bottom: 94px;
 }
 
 .item-team-center {
@@ -399,6 +407,8 @@ button:hover,
 button:focus {
   background-color: var(--blue);
   color: var(--white);
+  box-shadow: 0px 3px 1px var(--boxshadowcolorone),
+    0px 1px 2px var(--boxshadowcolortwo), 0px 2px 2px var(--boxshadowcolorthree);
 }
 
 .press-one {
@@ -410,8 +420,7 @@ button:focus {
   font-weight: 500;
   font-size: 16px;
   border-radius: 4px;
-  box-shadow: 0px 3px 1px var(--boxshadowcolorone),
-    0px 1px 2px var(--boxshadowcolortwo), 0px 2px 2px var(--boxshadowcolorthree);
+
   line-height: 1.62;
   cursor: pointer;
 }
@@ -425,8 +434,7 @@ button:focus {
   font-weight: 500;
   font-size: 16px;
   border-radius: 4px;
-  box-shadow: 0px 3px 1px var(--boxshadowcolorone),
-    0px 1px 2px var(--boxshadowcolortwo), 0px 2px 2px var(--boxshadowcolorthree);
+
   line-height: 1.62;
   cursor: pointer;
 }
@@ -440,8 +448,7 @@ button:focus {
   font-weight: 500;
   font-size: 16px;
   border-radius: 4px;
-  box-shadow: 0px 3px 1px var(--boxshadowcolorone),
-    0px 1px 2px var(--boxshadowcolortwo), 0px 2px 2px var(--boxshadowcolorthree);
+
   line-height: 1.62;
   cursor: pointer;
 }
@@ -455,8 +462,7 @@ button:focus {
   font-weight: 500;
   font-size: 16px;
   border-radius: 4px;
-  box-shadow: 0px 3px 1px var(--boxshadowcolorone),
-    0px 1px 2px var(--boxshadowcolortwo), 0px 2px 2px var(--boxshadowcolorthree);
+
   line-height: 1.62;
   cursor: pointer;
 }
@@ -470,8 +476,7 @@ button:focus {
   font-weight: 500;
   font-size: 16px;
   border-radius: 4px;
-  box-shadow: 0px 3px 1px var(--boxshadowcolorone),
-    0px 1px 2px var(--boxshadowcolortwo), 0px 2px 2px var(--boxshadowcolorthree);
+
   line-height: 1.62;
   cursor: pointer;
 }
