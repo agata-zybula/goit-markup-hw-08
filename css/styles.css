@@ -42,7 +42,8 @@ body {
   display: flex;
   list-style-type: none;
   gap: 50px;
-  padding: 32px 0px 32px 371px;
+  padding: 32px 0px 32px 0px;
+  margin-left: auto;
 }
 
 .second-menu {
@@ -97,7 +98,8 @@ ul {
 }
 
 .section {
-  padding: 94px 0px 94px 0px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .card-set-two {
@@ -214,6 +216,7 @@ img {
 
 .phone-footer {
   white-space: nowrap;
+  font-style: normal;
 }
 
 .link-two:hover,
@@ -258,11 +261,12 @@ img {
 .style-header-bottom {
   display: flex;
   margin-bottom: 20px;
-  padding-top: 60px;
+  width: fit-content;
 }
 
 .mail-footer {
   margin-bottom: 9px;
+  font-style: normal;
 }
 
 .menu-links {
@@ -304,10 +308,12 @@ img {
   letter-spacing: 0.03em;
   white-space: nowrap;
   margin-bottom: 9px;
+  font-style: normal;
 }
 
 .bottom-style {
-  height: 252px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background: var(--mediumgrey);
 }
 
@@ -328,6 +334,7 @@ img {
   color: var(--darkgrey);
   line-height: 1.17;
   letter-spacing: 0.06em;
+  padding-bottom: 10px;
 }
 
 .second-header {
@@ -355,7 +362,6 @@ img {
 .item-team {
   background: var(--white);
   width: 270px;
-  height: 368px;
   margin: 0px 0px 0px 0px;
   box-shadow: 0px 1px 3px var(--boxshadowcolorthree),
     0px 1px 1px var(--boxshadowcolorfour), 0px 2px 1px var(--boxshadowcolorfive);
@@ -390,6 +396,16 @@ img {
   line-height: 1.17;
   letter-spacing: 0.03em;
   margin: 0px 0px 0px 0px;
+  padding: 0px 0px 20px 0px;
+  text-align: center;
+}
+
+.description-card {
+  font-size: 16px;
+  color: var(--lightgrey);
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  margin: 0px 0px 0px 0px;
   padding: 0px 0px 20px 24px;
 }
 
@@ -409,6 +425,10 @@ button:focus {
   color: var(--white);
   box-shadow: 0px 3px 1px var(--boxshadowcolorone),
     0px 1px 2px var(--boxshadowcolortwo), 0px 2px 2px var(--boxshadowcolorthree);
+}
+
+.section-no-bottom {
+  padding-bottom: 0px;
 }
 
 .press-one {
