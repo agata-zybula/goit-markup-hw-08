@@ -33,15 +33,19 @@
             <li><a href="#" class="link">Kontakt</a></li>
           </ul>
         </nav>
-        <ul class="contact-style-top">
+         <ul class="contact-style-top">
           <li>
-            <a href="mailto:info@devstudio.com" class="contact link-two"
-              >info@example.com</a
+            <a href="mailto:info@devstudio.com" class="icon-contact contact link-two"
+              ><svg class="icon-contact" width="16" height="12">
+              <use href="./images/icons.svg#icon-envelope"></use>
+            </svg>info@example.com</a
             >
           </li>
           <li>
-            <a href="tel:+48111111111" class="contact link-two"
-              >+48 111 111 111</a
+            <a href="tel:+48111111111" class="icon-contact contact link-two"
+              ><svg class="icon-contact" width="10" height="16">
+              <use href="./images/icons.svg#icon-smartphone"></use>
+            </svg>+48 111 111 111</a
             >
           </li>
         </ul>
@@ -65,8 +69,9 @@
         </ul>
 
         <ul class="no-dot card-set">
-          <li class="gap">
-            <figure class="card-size">
+          <li>
+            <a class="card-style" href="#">
+            <figure class="card-size card-style-active">
               <img
                 src="./images/image1.jpg"
                 alt="Technocrack"
@@ -78,10 +83,12 @@
                 <p class="description-card">Strona internetowa</p>
               </figcaption>
             </figure>
+            </a>
           </li>
 
           <li>
-            <figure class="card-size">
+            <a class="card-style" href="#">
+            <figure class="card-size card-style-active">
               <img
                 src="./images/image2.jpg"
                 alt="Grafika New Orlean vs Golden Star"
@@ -93,10 +100,12 @@
                 <p class="description-card">Dizajn</p>
               </figcaption>
             </figure>
+            </a>
           </li>
 
           <li>
-            <figure class="card-size">
+            <a class="card-style" href="#">
+            <figure class="card-size card-style-active">
               <img
                 src="./images/image3.jpg"
                 alt="Restauracja Seafood"
@@ -108,9 +117,11 @@
                 <p class="description-card">Aplikacja</p>
               </figcaption>
             </figure>
+            </a>
           </li>
           <li>
-            <figure class="card-size">
+            <a class="card-style" href="#">
+            <figure class="card-size card-style-active">
               <img
                 src="./images/image4.jpg"
                 alt="Projekt Prime"
@@ -122,9 +133,11 @@
                 <p class="description-card">Marketing</p>
               </figcaption>
             </figure>
+            </a>
           </li>
           <li>
-            <figure class="card-size">
+            <a class="card-style" href="#">
+            <figure class="card-size card-style-active">
               <img
                 src="./images/image5.jpg"
                 alt="Projekt Boxes"
@@ -136,9 +149,11 @@
                 <p class="description-card">Aplikacja</p>
               </figcaption>
             </figure>
+            </a>
           </li>
           <li>
-            <figure class="card-size">
+            <a class="card-style" href="#">
+            <figure class="card-size card-style-active">
               <img
                 src="./images/image6.jpg"
                 alt="Inspiration has no Borders"
@@ -150,9 +165,11 @@
                 <p class="description-card">Strona internetowa</p>
               </figcaption>
             </figure>
+            </a>
           </li>
           <li>
-            <figure class="card-size">
+            <a class="card-style" href="#">
+            <figure class="card-size card-style-active">
               <img
                 src="./images/image7.jpg"
                 alt="Magazyn Limited Edition"
@@ -164,9 +181,11 @@
                 <p class="description-card">Dizajn</p>
               </figcaption>
             </figure>
+            </a>
           </li>
           <li>
-            <figure class="card-size">
+            <a class="card-style" href="#">
+            <figure class="card-size card-style-active">
               <img
                 src="./images/image8.jpg"
                 alt="Projekt LAB"
@@ -178,9 +197,11 @@
                 <p class="description-card">Marketing</p>
               </figcaption>
             </figure>
+            </a>
           </li>
           <li>
-            <figure class="card-size">
+            <a class="card-style" href="#">
+            <figure class="card-size card-style-active">
               <img
                 src="./images/image9.jpg"
                 alt="Growing Business"
@@ -192,13 +213,15 @@
                 <p class="description-card">Aplikacja</p>
               </figcaption>
             </figure>
+            </a>
           </li>
         </ul>
       </section>
     </main>
 
     <footer class="bottom-style">
-      <div class="container">
+      <div class="container contact-socials">
+        <section class="logo-contact">
         <a href="index.html" class="main-title-three style-header-bottom"
           ><span class="main-title-one">Web</span>Studio</a
         >
@@ -217,6 +240,25 @@
             </li>
           </ul>
         </address>
+        </section>
+        <section class="socials">
+          <h5 class="social-media-header">DOŁĄCZ DO NAS</h5>
+          <div class="social-media-style">
+            <a class="icon-social-media-footer" href="#">
+            <svg width="20" height="20">
+              <use href="./images/icons.svg#icon-instagram-2"></use>
+            </svg></a>
+           <a class="icon-social-media-footer" href="#"> <svg width="20" height="20">
+              <use href="./images/icons.svg#icon-twitter-1"></use>
+            </svg></a>
+           <a class="icon-social-media-footer" href="#"> <svg width="20" height="20">
+              <use href="./images/icons.svg#icon-facebook-1"></use>
+            </svg></a>
+            <a class="icon-social-media-footer" href="#"><svg width="20" height="20">
+              <use href="./images/icons.svg#icon-linkedin-1"></use>
+            </svg></a>
+          </div>
+        </section>
       </div>
     </footer>
   </body>
