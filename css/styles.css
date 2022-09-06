@@ -148,9 +148,10 @@ img {
 }
 
 .board {
+  width: 1600px;
   height: 600px;
   background: var(--mediumgrey);
-  margin: 0px;
+  margin: 0 auto;
   padding: 0px;
 }
 
@@ -620,7 +621,7 @@ button:focus {
 }
 
 .box-icon-clients:hover .icon-clients,
-.box-icon-clients:focus .icon-client {
+.box-icon-clients:focus .icon-clients {
   fill: var(--blue);
 }
 
@@ -634,7 +635,6 @@ button:focus {
   fill: var(--blue);
 }
 
-
 .team-icons {
   list-style-type: none;
   display: flex;
@@ -643,14 +643,13 @@ button:focus {
 }
 
 .icon-social-media {
- width: 44px;
- height: 44px;
+  width: 44px;
+  height: 44px;
   padding: 12px;
   fill: var(--color-icons);
   border-radius: 50%;
+  display: flex;
 }
-
-
 
 .icon-social-media-footer {
   width: 44px;
@@ -659,6 +658,11 @@ button:focus {
   fill: var(--white);
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
 }
 
 .icon-social-media:hover,
@@ -675,6 +679,9 @@ button:focus {
   background-color: var(--blue);
   padding: 12px;
   border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .icon-contact {
