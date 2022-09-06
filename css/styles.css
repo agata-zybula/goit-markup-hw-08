@@ -72,7 +72,8 @@ body {
 
 .card-style-active:focus,
 .card-style-active:hover {
-  box-shadow: 0px 1px 1px var(--boxshadowcolorthree), 0px 4px 4px var(--boxshadowsix), 1px 4px 6px var(--boxshadowseven);
+  box-shadow: 0px 1px 1px var(--boxshadowcolorthree),
+    0px 4px 4px var(--boxshadowsix), 1px 4px 6px var(--boxshadowseven);
 }
 
 h1 {
@@ -138,7 +139,6 @@ img {
 
 .card-size {
   width: 370px;
-  height: 404px;
   margin: 0px;
 }
 
@@ -229,7 +229,15 @@ img {
   font-style: normal;
   display: flex;
   white-space: nowrap;
-  fill: var(--blue);
+}
+
+.contact:hover,
+.contact:focus {
+  color: var(--blue);
+}
+
+.contact .icon-contact {
+  fill: currentColor;
 }
 
 .contact-footer {
@@ -237,9 +245,14 @@ img {
   text-decoration: none;
   line-height: 1.14;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 14px;
   letter-spacing: 0.03em;
+}
+
+.link-two:hover,
+.link-two:focus {
+  color: var(--blue);
 }
 
 .phone-footer {
@@ -252,13 +265,12 @@ img {
   fill: var(--blue);
 }
 
-.link-two:hover,
-.link-two:focus {
+.contact:hover,
+.contact:focus {
   color: var(--blue);
   text-decoration: none;
   line-height: 1.14;
 }
-
 
 .main-title-one {
   font-family: "Raleway";
@@ -412,6 +424,7 @@ img {
   align-items: center;
   justify-content: center;
   white-space: wrap;
+  padding-bottom: 30px;
 }
 
 .name-style {
@@ -551,6 +564,7 @@ button:focus {
   display: flex;
   list-style-type: none;
   gap: 10px;
+  list-style-position: outside;
 }
 
 .our-clients-style {
@@ -596,9 +610,18 @@ button:focus {
   border-radius: 4px;
 }
 
+.box-icon-clients .icon-clients {
+  fill: var(--color-icons);
+}
+
 .box-icon-clients:hover,
 .box-icon-clients:focus {
   border: 1px solid var(--blue);
+}
+
+.box-icon-clients:hover .icon-clients,
+.box-icon-clients:focus .icon-client {
+  fill: var(--blue);
 }
 
 .icon-clients {
@@ -611,26 +634,23 @@ button:focus {
   fill: var(--blue);
 }
 
+
 .team-icons {
   list-style-type: none;
   display: flex;
   justify-content: center;
-  margin-bottom: 30px;
   gap: 10px;
 }
 
-.space {
-  margin-bottom: 30px;
-}
-
 .icon-social-media {
-  width: 44px;
-  height: 44px;
+ width: 44px;
+ height: 44px;
   padding: 12px;
   fill: var(--color-icons);
   border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.1);
 }
+
+
 
 .icon-social-media-footer {
   width: 44px;
