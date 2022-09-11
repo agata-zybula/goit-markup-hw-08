@@ -26,7 +26,7 @@
 
         <nav>
           <ul class="menu-links">
-            <li><a href="#" class="link">Agencja</a></li>
+            <li><a href="index.html" class="link link-border">Agencja</a></li>
             <li>
               <a href="portfolio.html" class="link">Portfolio</a>
             </li>
@@ -60,7 +60,7 @@
           EFEKTYWNE ROZWIĄZANIA<br />DLA WASZEGO BIZNESU
         </h1>
         <div class="button-location">
-          <button type="button" class="board-button">Zamów usługe</button>
+          <button type="button" class="board-button" data-modal-open>Zamów usługe</button>
         </div>
         </div>
         </div>
@@ -133,6 +133,9 @@
         <h2 class="second-header">Czym się zajmujemy</h2>
         <ul class="card-set-two">
           <li>
+            <div class="position">
+            <p class="label">aplikacje komputerowe</p>
+            </div>
             <img
               src="./images/image.jpg"
               alt="Computer"
@@ -141,6 +144,9 @@
             />
           </li>
           <li>
+            <div class="position">
+            <p class="label">aplikacje mobilne</p>
+            </div>
             <img
               src="./images/image(1).jpg"
               alt="Phone"
@@ -149,6 +155,9 @@
             />
           </li>
           <li>
+            <div class="position">
+            <p class="label">rozwiązania graficzne</p>
+            </div>
             <img
               src="./images/image(2).jpg"
               alt="Tablet"
@@ -402,5 +411,12 @@
         </section>
       </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close-button" data-modal-close><svg width="11" height="11"><use href="./images/icons.svg#icon-Vector"></use></svg></button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

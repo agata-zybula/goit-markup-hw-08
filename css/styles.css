@@ -20,6 +20,8 @@
   --boxshadowseven: rgba(0, 0, 0, 0.16);
   --color-icons: #afb1b8;
   --background-image: rgba(47, 48, 58, 0.4);
+  --backdrop: rgba(0, 0, 0, 0.2);
+  --background-card: rgba(33, 150, 243, 0.9);
 }
 
 body {
@@ -30,6 +32,29 @@ body {
   background: var(--white);
   margin: 0px;
   padding: 0px;
+}
+
+.label {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--white);
+  width: 370px;
+  height: 70px;
+  background-color: var(--background-image);
+  text-align: center;
+  padding-top: 27px;
+  position: absolute;
+  right: 0;
+  top: 224px;
+}
+
+.position {
+  position: relative;
 }
 
 .style-header {
@@ -74,6 +99,9 @@ body {
 .card-style-active:hover {
   box-shadow: 0px 1px 1px var(--boxshadowcolorthree),
     0px 4px 4px var(--boxshadowsix), 1px 4px 6px var(--boxshadowseven);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
 }
 
 h1 {
@@ -198,8 +226,9 @@ img {
 
 .board-button:hover,
 .board-button:focus {
-  background-color: var(--white);
-  color: var(--blue);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
 }
 
 .container-lorem-ipsum {
@@ -235,6 +264,9 @@ img {
 .contact:hover,
 .contact:focus {
   color: var(--blue);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
 }
 
 .contact .icon-contact {
@@ -254,6 +286,9 @@ img {
 .link-two:hover,
 .link-two:focus {
   color: var(--blue);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
 }
 
 .phone-footer {
@@ -264,6 +299,9 @@ img {
 .icon-contact:hover,
 .icon-contact:focus {
   fill: var(--blue);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
 }
 
 .contact:hover,
@@ -271,6 +309,9 @@ img {
   color: var(--blue);
   text-decoration: none;
   line-height: 1.14;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
 }
 
 .main-title-one {
@@ -293,6 +334,7 @@ img {
   display: flex;
   padding: 25px 0px 25px 0px;
   letter-spacing: 0.03em;
+  outline: none;
 }
 
 .main-title-three {
@@ -346,6 +388,9 @@ img {
 .menu-links .link:hover,
 .menu-links .link:focus {
   color: var(--blue);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
 }
 
 .location {
@@ -473,6 +518,9 @@ button:focus {
   color: var(--white);
   box-shadow: 0px 3px 1px var(--boxshadowcolorone),
     0px 1px 2px var(--boxshadowcolortwo), 0px 2px 2px var(--boxshadowcolorthree);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
 }
 
 .section-no-bottom {
@@ -618,11 +666,17 @@ button:focus {
 .box-icon-clients:hover,
 .box-icon-clients:focus {
   border: 1px solid var(--blue);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
 }
 
 .box-icon-clients:hover .icon-clients,
 .box-icon-clients:focus .icon-clients {
   fill: var(--blue);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
 }
 
 .icon-clients {
@@ -632,6 +686,9 @@ button:focus {
 
 .icon-clients:hover,
 .icon-clients:focus {
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
   fill: var(--blue);
 }
 
@@ -671,6 +728,9 @@ button:focus {
   background-color: var(--blue);
   padding: 12px;
   border-radius: 50%;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
 }
 
 .icon-social-media-footer:hover,
@@ -682,6 +742,9 @@ button:focus {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
 }
 
 .icon-contact {
@@ -705,4 +768,103 @@ button:focus {
 
 .logo-contact {
   display: block;
+}
+
+.backdrop {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  background: var(--backdrop);
+}
+
+.modal {
+  position: absolute;
+  width: 528px;
+  height: 581px;
+  left: 536px;
+  top: 221px;
+  background: var(--white);
+  box-shadow: 0px 1px 3px var(--boxshadowcolorthree),
+    0px 1px 1px var(--boxshadowcolorfour), 0px 2px 1px var(--boxshadowcolorfive);
+  border-radius: 4px;
+  transform: scale(1);
+  opacity: 1;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.close-button {
+  position: absolute;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--boxshadowcolorone);
+  background-color: var(--white);
+  margin: 8px 8px 543px 490px;
+}
+
+.close-button:hover,
+.close-button:focus {
+  background-color: #ffffff;
+  box-shadow: none;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
+}
+
+.link-border {
+  position: relative;
+}
+
+.link-border::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  background: var(--blue);
+  border-radius: 2px;
+  top: 45px;
+}
+
+.box-style-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.box-style-card:hover .overlay {
+  transform: translateY(0);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 101%;
+  height: 101%;
+  padding-right: 45px;
+  padding-left: 24px;
+  display: flex;
+  align-items: center;
+  background-color: var(--background-card);
+  transition-property: transform;
+  transform: translateY(100%);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.description-card-active {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+  color: var(--white);
 }
