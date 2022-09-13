@@ -99,9 +99,13 @@ body {
 .card-style-active:hover {
   box-shadow: 0px 1px 1px var(--boxshadowcolorthree),
     0px 4px 4px var(--boxshadowsix), 1px 4px 6px var(--boxshadowseven);
+  outline: none;
+}
+
+.card-style-active {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  outline: none;
+  transition-property: box-shadow, duration, timing-function, outline;
 }
 
 h1 {
@@ -209,8 +213,9 @@ img {
   line-height: 1.88;
   cursor: pointer;
   letter-spacing: 0.06em;
-}
-.button-location {
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: duration, timing-function;
 }
 
 .location-header-button {
@@ -222,13 +227,6 @@ img {
   gap: 30px;
   flex-direction: column;
   align-items: center;
-}
-
-.board-button:hover,
-.board-button:focus {
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  outline: none;
 }
 
 .container-lorem-ipsum {
@@ -259,13 +257,14 @@ img {
   font-style: normal;
   display: flex;
   white-space: nowrap;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: duration, timing-function, color, outline;
 }
 
 .contact:hover,
 .contact:focus {
   color: var(--blue);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   outline: none;
 }
 
@@ -286,9 +285,13 @@ img {
 .link-two:hover,
 .link-two:focus {
   color: var(--blue);
+  outline: none;
+}
+
+.link-two {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  outline: none;
+  transition-property: duration, timing-function, color, outline;
 }
 
 .phone-footer {
@@ -299,8 +302,6 @@ img {
 .icon-contact:hover,
 .icon-contact:focus {
   fill: var(--blue);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   outline: none;
 }
 
@@ -309,8 +310,6 @@ img {
   color: var(--blue);
   text-decoration: none;
   line-height: 1.14;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   outline: none;
 }
 
@@ -368,7 +367,6 @@ img {
   list-style-type: none;
   gap: 46px;
   padding: 32px 0px 32px 93px;
-
   letter-spacing: 0.02em;
 }
 
@@ -383,14 +381,25 @@ img {
 .menu-links .link {
   color: var(--black);
   text-decoration: none;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: duration, timing-function, color, outline;
 }
 
 .menu-links .link:hover,
 .menu-links .link:focus {
   color: var(--blue);
+  outline: none;
+}
+
+.link {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  outline: none;
+  transition-property: duration, timing-function, color, fill, outline;
+}
+
+.menu-links .blue-menu {
+  color: var(--blue);
 }
 
 .location {
@@ -512,14 +521,48 @@ img {
   padding: 20px 0px 4px 24px;
 }
 
-button:hover,
-button:focus {
+.press-one:hover,
+.press-one:focus {
   background-color: var(--blue);
   color: var(--white);
   box-shadow: 0px 3px 1px var(--boxshadowcolorone),
     0px 1px 2px var(--boxshadowcolortwo), 0px 2px 2px var(--boxshadowcolorthree);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
+}
+
+.press-two:hover,
+.press-two:focus {
+  background-color: var(--blue);
+  color: var(--white);
+  box-shadow: 0px 3px 1px var(--boxshadowcolorone),
+    0px 1px 2px var(--boxshadowcolortwo), 0px 2px 2px var(--boxshadowcolorthree);
+  outline: none;
+}
+
+.press-three:hover,
+.press-three:focus {
+  background-color: var(--blue);
+  color: var(--white);
+  box-shadow: 0px 3px 1px var(--boxshadowcolorone),
+    0px 1px 2px var(--boxshadowcolortwo), 0px 2px 2px var(--boxshadowcolorthree);
+  outline: none;
+}
+
+.press-four:hover,
+.press-four:focus {
+  background-color: var(--blue);
+  color: var(--white);
+  box-shadow: 0px 3px 1px var(--boxshadowcolorone),
+    0px 1px 2px var(--boxshadowcolortwo), 0px 2px 2px var(--boxshadowcolorthree);
+  outline: none;
+}
+
+.press-five:hover,
+.press-five:focus {
+  background-color: var(--blue);
+  color: var(--white);
+  box-shadow: 0px 3px 1px var(--boxshadowcolorone),
+    0px 1px 2px var(--boxshadowcolortwo), 0px 2px 2px var(--boxshadowcolorthree);
   outline: none;
 }
 
@@ -536,9 +579,12 @@ button:focus {
   font-weight: 500;
   font-size: 16px;
   border-radius: 4px;
-
   line-height: 1.62;
   cursor: pointer;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color, color, box-shadow, duration,
+    timing-function, outline;
 }
 
 .press-two {
@@ -550,9 +596,12 @@ button:focus {
   font-weight: 500;
   font-size: 16px;
   border-radius: 4px;
-
   line-height: 1.62;
   cursor: pointer;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color, color, box-shadow, duration,
+    timing-function, outline;
 }
 
 .press-three {
@@ -564,9 +613,12 @@ button:focus {
   font-weight: 500;
   font-size: 16px;
   border-radius: 4px;
-
   line-height: 1.62;
   cursor: pointer;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color, color, box-shadow, duration,
+    timing-function, outline;
 }
 
 .press-four {
@@ -578,9 +630,12 @@ button:focus {
   font-weight: 500;
   font-size: 16px;
   border-radius: 4px;
-
   line-height: 1.62;
   cursor: pointer;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color, color, box-shadow, duration,
+    timing-function, outline;
 }
 
 .press-five {
@@ -592,9 +647,12 @@ button:focus {
   font-weight: 500;
   font-size: 16px;
   border-radius: 4px;
-
   line-height: 1.62;
   cursor: pointer;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color, color, box-shadow, duration,
+    timing-function, outline;
 }
 
 .social-media-header {
@@ -632,10 +690,6 @@ button:focus {
   background: rgba(47, 48, 58, 0.4);
 }
 
-.icon-contact {
-  fill: var(--blue);
-}
-
 .icon-lorem-background {
   width: 270px;
   height: 120px;
@@ -657,37 +711,40 @@ button:focus {
   background-color: var(--white);
   border: 1px solid var(--color-icons);
   border-radius: 4px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: border, fill, outline, duration, timing-function;
 }
 
 .box-icon-clients .icon-clients {
   fill: var(--color-icons);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+   transition-property: border, fill, outline, duration, timing-function;
 }
 
 .box-icon-clients:hover,
 .box-icon-clients:focus {
   border: 1px solid var(--blue);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   outline: none;
 }
 
 .box-icon-clients:hover .icon-clients,
 .box-icon-clients:focus .icon-clients {
   fill: var(--blue);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   outline: none;
 }
 
 .icon-clients {
   margin: 0 auto;
   fill: var(--color-icons);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+   transition-property: border, fill, outline, duration, timing-function;
 }
 
 .icon-clients:hover,
 .icon-clients:focus {
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   outline: none;
   fill: var(--blue);
 }
@@ -706,6 +763,9 @@ button:focus {
   fill: var(--color-icons);
   border-radius: 50%;
   display: flex;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: fill, duration, timing-function, background-color, outline;
 }
 
 .icon-social-media-footer {
@@ -720,6 +780,9 @@ button:focus {
   justify-content: center;
   width: 44px;
   height: 44px;
+    transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: fill, duration, timing-function, background-color, outline;
 }
 
 .icon-social-media:hover,
@@ -728,8 +791,6 @@ button:focus {
   background-color: var(--blue);
   padding: 12px;
   border-radius: 50%;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   outline: none;
 }
 
@@ -742,17 +803,17 @@ button:focus {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   outline: none;
 }
 
 .icon-contact {
-  fill: var(--lightgrey);
   display: flex;
   align-items: center;
   justify-content: center;
   margin-right: 10px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: duration, timing-function, color, fill, outline;
 }
 
 .contact-socials {
@@ -778,26 +839,31 @@ button:focus {
   left: 0px;
   top: 0px;
   background: var(--backdrop);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {
-  position: absolute;
+  position: relative;
+  top: 221px;
   width: 528px;
   height: 581px;
-  left: 536px;
-  top: 221px;
+  margin: 0 auto;
   background: var(--white);
   box-shadow: 0px 1px 3px var(--boxshadowcolorthree),
     0px 1px 1px var(--boxshadowcolorfour), 0px 2px 1px var(--boxshadowcolorfive);
   border-radius: 4px;
   transform: scale(1);
   opacity: 1;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+  transition-property: opacity, visibility;
 }
 
 .close-button {
@@ -808,14 +874,15 @@ button:focus {
   border: 1px solid var(--boxshadowcolorone);
   background-color: var(--white);
   margin: 8px 8px 543px 490px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: duration, timing-function, background-color;
 }
 
 .close-button:hover,
 .close-button:focus {
   background-color: #ffffff;
   box-shadow: none;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   outline: none;
 }
 
@@ -832,6 +899,27 @@ button:focus {
   background: var(--blue);
   border-radius: 2px;
   top: 45px;
+  color: var(--blue);
+}
+
+.border-active {
+  position: relative;
+    transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: duration, timing-function, background-color, color;
+}
+
+.border-active:hover::after,
+.border-active:focus::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  background: var(--blue);
+  border-radius: 2px;
+  top: 45px;
+  color: var(--blue);
 }
 
 .box-style-card {
@@ -854,7 +942,7 @@ button:focus {
   display: flex;
   align-items: center;
   background-color: var(--background-card);
-  transition-property: transform;
+  transition-property: transform, duration, timing-function, background-color;
   transform: translateY(100%);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
