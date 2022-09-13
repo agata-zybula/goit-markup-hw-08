@@ -99,13 +99,12 @@ body {
 .card-style-active:hover {
   box-shadow: 0px 1px 1px var(--boxshadowcolorthree),
     0px 4px 4px var(--boxshadowsix), 1px 4px 6px var(--boxshadowseven);
-  outline: none;
 }
 
 .card-style-active {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: box-shadow, duration, timing-function, outline;
+  transition-property: box-shadow;
 }
 
 h1 {
@@ -215,7 +214,6 @@ img {
   letter-spacing: 0.06em;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: duration, timing-function;
 }
 
 .location-header-button {
@@ -259,13 +257,12 @@ img {
   white-space: nowrap;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: duration, timing-function, color, outline;
+  transition-property: color;
 }
 
 .contact:hover,
 .contact:focus {
   color: var(--blue);
-  outline: none;
 }
 
 .contact .icon-contact {
@@ -285,13 +282,12 @@ img {
 .link-two:hover,
 .link-two:focus {
   color: var(--blue);
-  outline: none;
 }
 
 .link-two {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: duration, timing-function, color, outline;
+  transition-property: color;
 }
 
 .phone-footer {
@@ -302,7 +298,6 @@ img {
 .icon-contact:hover,
 .icon-contact:focus {
   fill: var(--blue);
-  outline: none;
 }
 
 .contact:hover,
@@ -310,7 +305,6 @@ img {
   color: var(--blue);
   text-decoration: none;
   line-height: 1.14;
-  outline: none;
 }
 
 .main-title-one {
@@ -333,7 +327,6 @@ img {
   display: flex;
   padding: 25px 0px 25px 0px;
   letter-spacing: 0.03em;
-  outline: none;
 }
 
 .main-title-three {
@@ -383,19 +376,18 @@ img {
   text-decoration: none;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: duration, timing-function, color, outline;
+  transition-property: color;
 }
 
 .menu-links .link:hover,
 .menu-links .link:focus {
   color: var(--blue);
-  outline: none;
 }
 
 .link {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: duration, timing-function, color, fill, outline;
+  transition-property: color;
 }
 
 .menu-links .blue-menu {
@@ -527,7 +519,6 @@ img {
   color: var(--white);
   box-shadow: 0px 3px 1px var(--boxshadowcolorone),
     0px 1px 2px var(--boxshadowcolortwo), 0px 2px 2px var(--boxshadowcolorthree);
-  outline: none;
 }
 
 .press-two:hover,
@@ -536,7 +527,6 @@ img {
   color: var(--white);
   box-shadow: 0px 3px 1px var(--boxshadowcolorone),
     0px 1px 2px var(--boxshadowcolortwo), 0px 2px 2px var(--boxshadowcolorthree);
-  outline: none;
 }
 
 .press-three:hover,
@@ -545,7 +535,6 @@ img {
   color: var(--white);
   box-shadow: 0px 3px 1px var(--boxshadowcolorone),
     0px 1px 2px var(--boxshadowcolortwo), 0px 2px 2px var(--boxshadowcolorthree);
-  outline: none;
 }
 
 .press-four:hover,
@@ -554,7 +543,6 @@ img {
   color: var(--white);
   box-shadow: 0px 3px 1px var(--boxshadowcolorone),
     0px 1px 2px var(--boxshadowcolortwo), 0px 2px 2px var(--boxshadowcolorthree);
-  outline: none;
 }
 
 .press-five:hover,
@@ -563,7 +551,6 @@ img {
   color: var(--white);
   box-shadow: 0px 3px 1px var(--boxshadowcolorone),
     0px 1px 2px var(--boxshadowcolortwo), 0px 2px 2px var(--boxshadowcolorthree);
-  outline: none;
 }
 
 .section-no-bottom {
@@ -583,8 +570,7 @@ img {
   cursor: pointer;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: background-color, color, box-shadow, duration,
-    timing-function, outline;
+  transition-property: background-color, color, box-shadow;
 }
 
 .press-two {
@@ -600,8 +586,7 @@ img {
   cursor: pointer;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: background-color, color, box-shadow, duration,
-    timing-function, outline;
+  transition-property: background-color, color, box-shadow;
 }
 
 .press-three {
@@ -617,8 +602,7 @@ img {
   cursor: pointer;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: background-color, color, box-shadow, duration,
-    timing-function, outline;
+  transition-property: background-color, color, box-shadow;
 }
 
 .press-four {
@@ -634,8 +618,7 @@ img {
   cursor: pointer;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: background-color, color, box-shadow, duration,
-    timing-function, outline;
+  transition-property: background-color, color, box-shadow;
 }
 
 .press-five {
@@ -651,8 +634,7 @@ img {
   cursor: pointer;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: background-color, color, box-shadow, duration,
-    timing-function, outline;
+  transition-property: background-color, color, box-shadow;
 }
 
 .social-media-header {
@@ -713,26 +695,24 @@ img {
   border-radius: 4px;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: border, fill, outline, duration, timing-function;
+  transition-property: border, fill;
 }
 
 .box-icon-clients .icon-clients {
   fill: var(--color-icons);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-   transition-property: border, fill, outline, duration, timing-function;
+  transition-property: border, fill;
 }
 
 .box-icon-clients:hover,
 .box-icon-clients:focus {
   border: 1px solid var(--blue);
-  outline: none;
 }
 
 .box-icon-clients:hover .icon-clients,
 .box-icon-clients:focus .icon-clients {
   fill: var(--blue);
-  outline: none;
 }
 
 .icon-clients {
@@ -740,12 +720,11 @@ img {
   fill: var(--color-icons);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-   transition-property: border, fill, outline, duration, timing-function;
+  transition-property: fill;
 }
 
 .icon-clients:hover,
 .icon-clients:focus {
-  outline: none;
   fill: var(--blue);
 }
 
@@ -765,7 +744,7 @@ img {
   display: flex;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: fill, duration, timing-function, background-color, outline;
+  transition-property: fill, background-color;
 }
 
 .icon-social-media-footer {
@@ -780,9 +759,9 @@ img {
   justify-content: center;
   width: 44px;
   height: 44px;
-    transition-duration: 250ms;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: fill, duration, timing-function, background-color, outline;
+  transition-property: fill, background-color;
 }
 
 .icon-social-media:hover,
@@ -791,7 +770,6 @@ img {
   background-color: var(--blue);
   padding: 12px;
   border-radius: 50%;
-  outline: none;
 }
 
 .icon-social-media-footer:hover,
@@ -803,7 +781,6 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  outline: none;
 }
 
 .icon-contact {
@@ -811,9 +788,6 @@ img {
   align-items: center;
   justify-content: center;
   margin-right: 10px;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: duration, timing-function, color, fill, outline;
 }
 
 .contact-socials {
@@ -876,14 +850,14 @@ img {
   margin: 8px 8px 543px 490px;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: duration, timing-function, background-color;
+  transition-property: background-color;
+  cursor: pointer;
 }
 
 .close-button:hover,
 .close-button:focus {
-  background-color: #ffffff;
+  background-color: var(--white);
   box-shadow: none;
-  outline: none;
 }
 
 .link-border {
@@ -904,9 +878,9 @@ img {
 
 .border-active {
   position: relative;
-    transition-duration: 250ms;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: duration, timing-function, background-color, color;
+  transition-property: background-color;
 }
 
 .border-active:hover::after,
@@ -916,10 +890,9 @@ img {
   display: block;
   width: 100%;
   height: 4px;
-  background: var(--blue);
+  background-color: var(--blue);
   border-radius: 2px;
   top: 45px;
-  color: var(--blue);
 }
 
 .box-style-card {
@@ -942,7 +915,7 @@ img {
   display: flex;
   align-items: center;
   background-color: var(--background-card);
-  transition-property: transform, duration, timing-function, background-color;
+  transition-property: transform, background-color;
   transform: translateY(100%);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
