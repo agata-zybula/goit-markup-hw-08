@@ -735,6 +735,7 @@ img {
   gap: 10px;
 }
 
+
 .icon-social-media {
   width: 44px;
   height: 44px;
@@ -813,8 +814,10 @@ img {
   left: 0px;
   top: 0px;
   background: var(--backdrop);
+  opacity: 1;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: opacity, visibility;
 }
 
 .modal {
@@ -837,7 +840,6 @@ img {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transition-property: opacity, visibility;
 }
 
 .close-button {
@@ -900,8 +902,8 @@ img {
   overflow: hidden;
 }
 
-.box-style-card:hover .overlay {
-  transform: translateY(0);
+.box-overlay:hover .overlay {
+transform: translateY(0);
 }
 
 .overlay {
