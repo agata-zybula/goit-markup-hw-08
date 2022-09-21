@@ -817,6 +817,7 @@ img {
   left: 0px;
   top: 0px;
   background: var(--backdrop);
+  align-items: center;
   opacity: 1;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -825,9 +826,8 @@ img {
 
 .modal {
   position: relative;
-  top: 221px;
   width: 528px;
-  height: 581px;
+  height: fit-content;
   margin: 0 auto;
   background: var(--white);
   box-shadow: 0px 1px 3px var(--boxshadowcolorthree),
@@ -837,6 +837,8 @@ img {
   opacity: 1;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+padding-left: 40px;
+padding-right: 40px;
 }
 
 .is-hidden {
@@ -846,13 +848,14 @@ img {
 }
 
 .close-button {
-  position: absolute;
+position: absolute;
+right: 8px;
+top: 8px;
   border-radius: 50%;
   width: 30px;
   height: 30px;
   border: 1px solid var(--boxshadowcolorone);
   background-color: var(--white);
-  margin: 8px 8px 543px 490px;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: background-color;
@@ -987,9 +990,6 @@ img {
   line-height: 1, 25;
   letter-spacing: 0.03em;
   color: var(--footerlinks);
-  padding-top: 15px;
-  padding-right: 295px;
-  padding-bottom: 15px;
 }
 
 .form-signup {
@@ -1022,17 +1022,19 @@ img {
 
 .textarea-style {
   resize: none;
-  width: 448px;
+  width: 100%;
   height: 120px;
   border: 1px solid var(--textarea-border);
   border-radius: 4px;
-  margin-top: 4px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
+  display: block;
+  margin-top: 4px;
+  margin-bottom: 20px;
   padding-top: 12px;
   padding-left: 16px;
   transition-duration: 250ms;
@@ -1045,27 +1047,21 @@ img {
 }
 
 .field-style {
-  width: 448px;
   height: 40px;
+  width: 100%;
   border: 1px solid var(--textarea-border);
   border-radius: 4px;
-  margin-top: 4px;
-  margin-bottom: 10px;
   padding-left: 42px;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: border, outline-color;
 }
 
-.form-style {
-  margin-left: 40px;
-}
-
 .icon-form {
   fill: var(--darkgrey);
   position: relative;
-  right: 439px;
-  top: 3px;
+  bottom: 30px;
+  left: 15px;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: fill;
@@ -1079,7 +1075,8 @@ img {
   line-height: 1.16;
   letter-spacing: 0.01em;
   color: var(--lightgrey);
-  margin-bottom: 20px;
+  display: block;
+  margin-bottom: 4px;
 }
 
 .field-style:focus,
@@ -1109,13 +1106,18 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--lightgrey);
-  position: relative;
-  top: 20px;
-  bottom: 30px;
+  display: inline;
 }
 
 .rules-blue {
   color: var(--blue);
+}
+
+.btn-center {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 40px;
 }
 
 .send-btn {
@@ -1132,14 +1134,15 @@ img {
   line-height: 1.87;
   letter-spacing: 0.06em;
   color: var(--white);
-  margin-left: 124px;
-  margin-top: 50px;
   cursor: pointer;
+  
 }
 
 .checkbox-style {
-  margin-left: 15px;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
 }
 
 .hidden-checkbox {
@@ -1161,9 +1164,8 @@ img {
   height: 15px;
   border: 2px solid var(--darkgrey);
   border-radius: 2px;
-  position: relative;
-  top: 22px;
-  right: 6px;
+  cursor: pointer;
+  margin-right: 7px;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: background-color, background-image;
