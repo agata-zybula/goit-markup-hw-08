@@ -1,0 +1,48 @@
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.container {
+  width: 1200px;
+  padding: 0px 15px;
+  margin: 0 auto;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  color: var(--darkgrey);
+  line-height: 1.16;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.cards-set {
+  display: flex;
+  gap: 30px;
+  list-style-type: none;
+}
+
+.cards-set__label {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: var(--white);
+    width: 370px;
+    height: 70px;
+    background-color: var(--background-image);
+    text-align: center;
+    padding-top: 27px;
+    position: absolute;
+    right: 0;
+    top: 224px;
+  }
+  
+  .cards-set__position {
+    position: relative;
+  }

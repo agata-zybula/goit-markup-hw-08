@@ -1,0 +1,17 @@
+
+  .modal {
+    position: relative;
+    width: 528px;
+    height: fit-content;
+    margin: 0 auto;
+    background: var(--white);
+    box-shadow: 0px 1px 3px var(--boxshadowcolorthree),
+      0px 1px 1px var(--boxshadowcolorfour), 0px 2px 1px var(--boxshadowcolorfive);
+    border-radius: 4px;
+    transform: scale(1);
+    opacity: 1;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  padding-left: 40px;
+  padding-right: 40px;
+  }
