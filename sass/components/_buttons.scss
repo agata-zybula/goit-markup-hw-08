@@ -18,37 +18,44 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-property: background-color, color, box-shadow;
-  }
 
-  .btn:hover,
-.btn:focus {
-  background-color: var(--blue);
-  color: var(--white);
-  box-shadow: 0px 3px 1px var(--boxshadowcolorone),
-    0px 1px 2px var(--boxshadowcolortwo), 0px 2px 2px var(--boxshadowcolorthree);
+     &:hover,
+     &:focus {
+       background-color: var(--blue);
+       color: var(--white);
+       box-shadow: 0px 3px 1px var(--boxshadowcolorone),
+       0px 1px 2px var(--boxshadowcolortwo), 0px 2px 2px var(--boxshadowcolorthree);
+  }
 }
 
+
+
 .btn--sizeone {
+  @extend .btn;
     width: 121px;
     height: 38px;
   }
   
   .btn--sizetwo {
+    @extend .btn;
     width: 93px;
     height: 38px;
   }
   
   .btn--sizethree {
+    @extend .btn;
     width: 114px;
     height: 38px;
   }
   
   .btn--sizefour {
+    @extend .btn;
     width: 91px;
     height: 38px;
   }
   
   .btn--sizefive {
+    @extend .btn;
     width: 121px;
     height: 38px;
   }

@@ -1,11 +1,12 @@
 @import "./utils/variables";
 @import "./utils/main-styles";
+@import "./utils/container";
+@import "./utils/section";
 
 @import "./components/backdrop";
 @import "./components/board";
 @import "./components/box-clients";
 @import "./components/cards-set";
-@import "./components/contact";
 @import "./components/footer";
 @import "./components/header";
 @import "./components/lorem-ipsum-container";

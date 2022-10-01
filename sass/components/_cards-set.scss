@@ -2,9 +2,8 @@
   display: flex;
   gap: 30px;
   list-style-type: none;
-}
 
-.cards-set__label {
+  &__label {
     font-family: "Roboto";
     font-style: normal;
     font-weight: 700;
@@ -22,7 +21,8 @@
     right: 0;
     top: 224px;
   }
-  
-  .cards-set__position {
+
+  &__position {
     position: relative;
   }
+}
