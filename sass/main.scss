@@ -1,14 +1,10 @@
-@import "./utils/hidden";
-@import "./utils/modal";
-@import "./utils/modal-button";
-@import "./utils/modal-form";
 @import "./utils/variables";
+@import "./utils/main-styles";
 
 @import "./components/backdrop";
 @import "./components/board";
 @import "./components/box-clients";
 @import "./components/cards-set";
-@import "./components/common";
 @import "./components/contact";
 @import "./components/footer";
 @import "./components/header";
@@ -16,5 +12,6 @@
 @import "./components/our-team";
 @import "./components/buttons";
 @import "./components/card-container";
+@import "./components/modal";
 
 

@@ -1,0 +1,54 @@
+
+  h1,
+  h2,
+  h3,
+  h4,
+  p,
+  ul {
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  img {
+    display: block;
+    padding: 0;
+    margin: 0;
+  } 
+
+  body {
+    font-family: "Roboto", "Raleway", sans-serif;
+    font-size: 14px;
+    color: var(--black);
+    margin: 0px;
+    background: var(--white);
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  
+  .container {
+    width: 1200px;
+    padding: 0px 15px;
+    margin: 0 auto;
+  }
+  
+  .title {
+    font-weight: 700;
+    font-size: 36px;
+    color: var(--darkgrey);
+    line-height: 1.16;
+    padding-bottom: 50px;
+    text-align: center;
+  }
+
+  .box {
+    display: flex;
+    gap: 30px;
+    list-style-type: none;
+  }
+  
+  
