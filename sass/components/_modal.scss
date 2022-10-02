@@ -103,18 +103,7 @@
         outline: 1px;
       }
     }
-
-    &__input:focus,
-    &__input:hover {
-      border: 1px solid var(--blue);
-      outline-color: var(--blue);
-      outline: 1px;
-
-      & + .modal__icon,
-      & + .modal__icon {
-        fill: var(--blue);
-      }
-    }
+    
 
     &__input {
       height: 40px;
@@ -125,6 +114,18 @@
       transition-duration: 250ms;
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
       transition-property: border, outline-color;
+
+      &:focus,
+      &:hover {
+      border: 1px solid var(--blue);
+      outline-color: var(--blue);
+      outline: 1px;
+      }
+
+      &:focus + .modal__icon,
+      &:hover + .modal__icon {
+        fill: var(--blue);
+      }
     }
   }
   

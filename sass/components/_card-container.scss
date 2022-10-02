@@ -11,10 +11,42 @@
     }
   }
 
-  .overlay:hover .overlay__card {
-    transform: translateY(0);
+  .overlay {
+    &:hover &__card {
+      transform: translateY(0);
+    }
+
+    &__position {
+      position: relative;
+      overflow: hidden;
+    }
+
+    &__card {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 101%;
+      height: 101%;
+      padding-right: 45px;
+      padding-left: 24px;
+      display: flex;
+      align-items: center;
+      background-color: var(--background-card);
+      transition-property: transform, background-color;
+      transform: translateY(100%);
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__text {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 1.55;
+      letter-spacing: 0.03em;
+      color: var(--white);
+    }
   }
-  
 
 .card {
    width: 370px;
@@ -27,37 +59,6 @@
     }
   }
   
-  .overlay__position {
-    position: relative;
-    overflow: hidden;
-  }
-
-  .overlay__card {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 101%;
-    height: 101%;
-    padding-right: 45px;
-    padding-left: 24px;
-    display: flex;
-    align-items: center;
-    background-color: var(--background-card);
-    transition-property: transform, background-color;
-    transform: translateY(100%);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  .overlay__text {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.55;
-    letter-spacing: 0.03em;
-    color: var(--white);
-  }
-
   .card-description {
     border-left: 1px solid var(--cardborder);
     border-right: 1px solid var(--cardborder);
