@@ -47,6 +47,7 @@
 }
 .section--padding {
   padding-bottom: 0px;
+  margin-bottom: 94px;
 }
 .section--background {
   background: var(--buttonbackground);
@@ -697,30 +698,21 @@ body {
 }
 
 .container-descriptions {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  list-style-type: none;
-  padding: 0px;
-  margin: 0px;
-  gap: 30px;
-}
-.container-descriptions__width {
-  width: 270px;
-}
-.container-descriptions__header {
+  color: var(--darkgrey);
+  font-style: normal;
   font-weight: 700;
   font-size: 14px;
-  color: var(--darkgrey);
-  line-height: 1.17;
-  letter-spacing: 0.06em;
-  padding-bottom: 10px;
+  line-height: 1, 17;
+  letter-spacing: 0.03em;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 .container-descriptions__text {
   color: var(--lightgrey);
   line-height: 1.71;
   letter-spacing: 0.06em;
   white-space: nowrap;
+  margin-bottom: 94px;
 }
 
 .second-menu {

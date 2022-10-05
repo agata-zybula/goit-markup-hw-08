@@ -16,31 +16,26 @@
     }
   }
 
+ 
+
   .container-descriptions {
-    display: flex;
-    list-style-type: none;
-    padding: 0px;
-    margin: 0px;
-    gap: 30px;
+      
+    color: var(--darkgrey);     
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1,17;
+    letter-spacing: 0.03em;
+    margin-top: 30px;
+    margin-bottom: 10px;
 
-    &__width {
-      width: 270px;
-    }
-
-    &__header {
-      font-weight: 700;
-      font-size: 14px;
-      color: var(--darkgrey);
-      line-height: 1.17;
-      letter-spacing: 0.06em;
-      padding-bottom: 10px;
-    }
 
     &__text {
       color: var(--lightgrey);
       line-height: 1.71;
       letter-spacing: 0.06em;
       white-space: nowrap;
+      margin-bottom: 94px;
     }
   }
   
