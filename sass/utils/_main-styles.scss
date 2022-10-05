@@ -1,5 +1,5 @@
 .container {
-  width: 1200px;
+  width: 100%;
   padding: 0px 15px;
   margin: 0 auto;
 
@@ -11,6 +11,28 @@
     display: block;
   }
 }
+
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+    padding: 0px 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0px 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+    padding: 0px 15px;
+  }
+}
+
 
 .section {
   padding-top: 94px;
@@ -40,8 +62,8 @@
 }
 
 .box {
-  display: flex;
-  gap: 30px;
+  display: block;
+  column-gap: 30px;
   list-style-type: none;
 
   &__styles {
@@ -104,6 +126,72 @@
       }  
    }
 }
+
+// .box {
+//   display: flex;
+//   gap: 30px;
+//   list-style-type: none;
+
+//   &__styles {
+//     background: var(--white);
+//     width: 270px;
+//     margin: 0px 0px 0px 0px;
+//     box-shadow: 0px 1px 3px var(--boxshadowcolorthree),
+//       0px 1px 1px var(--boxshadowcolorfour), 0px 2px 1px var(--boxshadowcolorfive);
+//     border-radius: 0px 0px 4px 4px;
+//   }
+
+//   &__padding {
+//     padding-bottom: 30px;
+//   }
+
+//   &__name {
+//     font-style: normal;
+//     font-weight: 500;
+//     font-size: 16px;
+//     line-height: 1.17;
+//     color: var(--darkgrey);
+//     text-align: center;
+//     margin: 30px 0px 10px 0px;
+//   }
+
+//   &__description {
+//     font-size: 16px;
+//     color: var(--lightgrey);
+//     line-height: 1.17;
+//     letter-spacing: 0.03em;
+//     margin: 0px 0px 0px 0px;
+//     padding: 0px 0px 20px 0px;
+//     text-align: center;
+//   }
+
+//   &__icons {
+//     list-style-type: none;
+//     display: flex;
+//     justify-content: center;
+//     gap: 10px;
+//   }
+
+//   &__icons-styles {
+//     width: 44px;
+//     height: 44px;
+//     padding: 12px;
+//     fill: var(--color-icons);
+//     border-radius: 50%;
+//     display: flex;
+//     transition-duration: 250ms;
+//     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+//     transition-property: fill, background-color;
+    
+//      &:hover,
+//      &:focus {
+//        fill: var(--white);
+//        background-color: var(--blue);
+//        padding: 12px;
+//        border-radius: 50%;
+//       }  
+//    }
+// }
   
   h1,
   h2,
