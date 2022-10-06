@@ -2,6 +2,7 @@
     padding-top: 60px;
     padding-bottom: 60px;
     background: var(--mediumgrey);
+    
   }
 
   .main-logo {
@@ -14,7 +15,8 @@
     display: flex;
     padding: 25px 0px 25px 0px;
     letter-spacing: 0.03em;
-
+    justify-content: center;
+   
     &__text {
       color: var(--blue);
     }
@@ -32,11 +34,16 @@
     white-space: nowrap;
     margin-bottom: 9px;
     font-style: normal;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
   }
 
   .contact {
     font-style: normal;
     list-style-type: none;
+    text-align: center;
 
     &__margin {
       margin-bottom: 9px;
@@ -67,8 +74,9 @@
   .social-media {
     width: 206px;
     height: 80px;
-    margin-left: 70px;
+    // margin-left: 70px;
     margin-top: 30px;
+    
 
     &__header {
       font-family: "Roboto";
@@ -81,6 +89,10 @@
       margin-top: 0px;
       margin-bottom: 20px;
       text-transform: uppercase;
+       justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
     }
 
     &__style {
@@ -88,6 +100,7 @@
       list-style-type: none;
       gap: 10px;
       list-style-position: outside;
+      
     }
 
     &__icon {
@@ -121,8 +134,12 @@
 
 .section-form {
     margin-top: 30px;
-    margin-left: auto;
-    margin-right: 0px;
+    // margin-left: auto;
+    // margin-right: 0px;
+     justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
     
     &__header {
       font-family: "Roboto";
@@ -136,9 +153,14 @@
       margin-bottom: 20px;
       text-transform: uppercase;
       }
+
+      // off for mobile footer
     
     &__flex {
-        display: flex;
+        justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
       }
 
     &__input {
@@ -172,12 +194,19 @@
         border-radius: 4px;
         border: none;
         letter-spacing: 0.06em;
-        margin-left: 9px;
+        // margin-left: 9px;
         cursor: pointer;
         align-items: center;
         text-align: center;
         display: flex;
-        padding-left: 42px;
+        padding-left: 42px;        
+      }
+
+      &__location-button {
+         justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
       }
 
       &__icon {
@@ -185,6 +214,204 @@
         margin-left: 24px;
       }
     }
+      
+
+  
+
+
+
+
+  
+
+
+
+// .footer {
+//     padding-top: 60px;
+//     padding-bottom: 60px;
+//     background: var(--mediumgrey);
+//   }
+
+//   .main-logo {
+//     font-family: "Raleway";
+//     font-weight: 700;
+//     font-size: 26px;
+//     color: var(--black);
+//     text-decoration: none;
+//     line-height: 1.19;
+//     display: flex;
+//     padding: 25px 0px 25px 0px;
+//     letter-spacing: 0.03em;
+
+//     &__text {
+//       color: var(--blue);
+//     }
+
+//     &__text-bottom {
+//       color: var(--white);
+//     }
+//   }
+
+//   .address {
+//     color: var(--white);
+//     line-height: 1.71;
+//     font-style: normal;
+//     letter-spacing: 0.03em;
+//     white-space: nowrap;
+//     margin-bottom: 9px;
+//     font-style: normal;
+//   }
+
+//   .contact {
+//     font-style: normal;
+//     list-style-type: none;
+
+//     &__margin {
+//       margin-bottom: 9px;
+//     }
+
+//     &__style {
+//       color: var(--footerlinks);
+//       text-decoration: none;
+//       line-height: 1.14;
+//       font-style: normal;
+//       font-weight: 400;
+//       font-size: 14px;
+//       letter-spacing: 0.03em;
+
+//       &--color {
+//         transition-duration: 250ms;
+//         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+//         transition-property: color;
+//       }
+
+//       &--color:hover,
+//       &--color:focus {
+//         color: var(--blue);
+//       }
+//     }
+//   }
+
+//   .social-media {
+//     width: 206px;
+//     height: 80px;
+//     margin-left: 70px;
+//     margin-top: 30px;
+
+//     &__header {
+//       font-family: "Roboto";
+//       font-style: normal;
+//       font-weight: 700;
+//       font-size: 14px;
+//       line-height: 1.14;
+//       letter-spacing: 0.03em;
+//       color: var(--white);
+//       margin-top: 0px;
+//       margin-bottom: 20px;
+//       text-transform: uppercase;
+//     }
+
+//     &__style {
+//       display: flex;
+//       list-style-type: none;
+//       gap: 10px;
+//       list-style-position: outside;
+//     }
+
+//     &__icon {
+//       width: 44px;
+//       height: 44px;
+//       padding: 12px;
+//       fill: var(--white);
+//       border-radius: 50%;
+//       background-color: rgba(255, 255, 255, 0.1);
+//       display: flex;
+//       align-items: center;
+//       justify-content: center;
+//       width: 44px;
+//       height: 44px;
+//       transition-duration: 250ms;
+//       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+//       transition-property: fill, background-color;
+
+//       &:hover,
+//       &:focus {
+//        fill: var(--white);
+//        background-color: var(--blue);
+//        padding: 12px;
+//        border-radius: 50%;
+//        display: flex;
+//        align-items: center;
+//        justify-content: center;
+//       }
+//     }
+//   }
+
+// .section-form {
+//     margin-top: 30px;
+//     margin-left: auto;
+//     margin-right: 0px;
+    
+//     &__header {
+//       font-family: "Roboto";
+//       font-style: normal;
+//       font-weight: 700;
+//       font-size: 14px;
+//       line-height: 1.14;
+//       letter-spacing: 0.03em;
+//       color: var(--white);
+//       margin-top: 0px;
+//       margin-bottom: 20px;
+//       text-transform: uppercase;
+//       }
+    
+//     &__flex {
+//         display: flex;
+//       }
+
+//     &__input {
+//       width: 358px;
+//       height: 50px;
+//       border: 1px solid var(--border-signup);
+//       filter: drop-shadow(0px 4px 4px var(--boxshadowcolor));
+//       border-radius: 4px;
+//       background: var(--mediumgrey);
+//       color: var(--white);
+//       font-family: "Roboto";
+//       font-style: normal;
+//       font-weight: 400;
+//       font-size: 16px;
+//       line-height: 1, 25;
+//       letter-spacing: 0.03em;
+//       padding-left: 16px;
+//       }
+
+//     &__button {
+//         width: 200px;
+//         height: 50px;
+//         background-color: var(--blue);
+//         color: var(--white);
+//         font-family: "Roboto";
+//         font-style: normal;
+//         font-weight: 700;
+//         font-size: 16px;
+//         line-height: 1.87;
+//         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+//         border-radius: 4px;
+//         border: none;
+//         letter-spacing: 0.06em;
+//         margin-left: 9px;
+//         cursor: pointer;
+//         align-items: center;
+//         text-align: center;
+//         display: flex;
+//         padding-left: 42px;
+//       }
+
+//       &__icon {
+//         fill: var(--white);
+//         margin-left: 24px;
+//       }
+//     }
       
 
   

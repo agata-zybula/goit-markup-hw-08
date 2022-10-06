@@ -3,9 +3,11 @@
   padding: 0px 15px;
   margin: 0 auto;
 
-   &__display {
-    display: flex;
-  }
+  // switch off for footer mobile
+
+  //  &__display {
+  
+  // }
 
    &__display-block {
     display: block;
@@ -33,6 +35,7 @@
   }
 }
 
+// add margin-bottom:0
 
 .section {
   padding-top: 94px;
@@ -40,31 +43,60 @@
 
   &--padding {
     padding-bottom: 0px;
-    margin-bottom: 94px;
+    margin-bottom: 0px;
   }
 
   &--background {
     background: var(--buttonbackground);
   }
+
+  &--center {
+    align-items: center;
+    justify-content: center;
+  }
 }
+
+// title for box clients
+
 
 .title {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   color: var(--darkgrey);
-  line-height: 1.16;
+  line-height: 1.17;
   padding-bottom: 50px;
   text-align: center;
+  letter-spacing: 0.03em;
 
   &--padding {
     padding-bottom: 50px;
   }
 }
 
+
+// .title {
+//   font-weight: 700;
+//   font-size: 36px;
+//   color: var(--darkgrey);
+//   line-height: 1.16;
+//   padding-bottom: 50px;
+//   text-align: center;
+
+//   &--padding {
+//     padding-bottom: 50px;
+//   }
+// }
+
+// box for our clients
+
 .box {
-  display: block;
+  display: flex;
   column-gap: 30px;
+  gap: 30px;
   list-style-type: none;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 
   &__styles {
     background: var(--white);
