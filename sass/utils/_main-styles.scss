@@ -19,7 +19,8 @@
     max-width: 480px;
     padding: 0px 15px;
   }
-}
+  }
+
 
 @media screen and (min-width: 768px) {
   .container {
@@ -38,8 +39,8 @@
 // add margin-bottom:0
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
   &--padding {
     padding-bottom: 0px;

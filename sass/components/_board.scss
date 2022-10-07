@@ -1,23 +1,44 @@
 
 .board {
-    width: 480px;
-    height: 400px;
-    background: var(--mediumgrey);
-    margin: 0 auto;
-    padding: 0px;
-
-    &__photo {
-      background-image: linear-gradient(
+  // width: 100%;
+  min-width: 320px;
+  background-image: linear-gradient(
           to right,
           var(--background-image),
           var(--background-image)
         ),
-        url(../images/header@1-mobile.jpg);
-      width: 480px;
-      height: 400px;
-      background-repeat: no-repeat;
-      background-position: center;
-    }
+    url(../images/header-mobile1x.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  gap: 30px;
+  // padding: 118px 0px;
+  max-width: 1600px;
+    // margin: 0 auto;
+
+  //   &__photo {
+  //     background-image: linear-gradient(
+  //         to right,
+  //         var(--background-image),
+  //         var(--background-image)
+  //       ),
+  //   url(../images/header-mobile1x.jpg);
+  // background-repeat: no-repeat;
+  // background-position: center;
+  // background-size: 100%;
+  // background-size: cover;
+  // align-items: center;
+  // justify-content: center;
+  // flex-direction: column;
+  // display: flex;
+  // gap: 30px;
+  // // padding: 118px 0px;
+  // max-width: 1600px;
+  // }
 
     &__button {
       font-family: "Roboto";
@@ -39,24 +60,102 @@
       justify-content: center;
       align-items: center;
       display: flex;
-      margin-top: 30px;
     }
 
-    &__location {
-    padding-top: 118px;
-    }
+    // &__location {
+    // padding-top: 118px;
+    // }
 
     &__title {
       font-weight: 900;
       font-size: 26px;
       color: var(--white);
-      margin-top: 0px;
-      margin-bottom: 0px;
+      // margin-top: 0px;
+      // margin-bottom: 0px;
       text-align: center;
       line-height: 1.61;
       letter-spacing: 0.06em;
-    }
-  }
+  }}
+
+  @media screen and (max-width: 768px) and (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .board {
+   background-size: cover;
+      
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-image: linear-gradient(
+          to right,
+          var(--background-image),
+          var(--background-image)
+        ),
+        url(../images/header-mobile2x.jpg);
+}}
+
+  @media screen and (min-width: 768px) {
+  .board {
+    background-size: cover;
+      
+      background-repeat: no-repeat;
+      background-size: 100%;
+     background-image: linear-gradient(
+          to right,
+          var(--background-image),
+          var(--background-image)
+        ),
+        url(../images/header-tablet1x.jpg);
+  }}
+    
+  
+  @media screen and (max-width: 1200px) and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .board {
+      background-size: cover;
+     
+      background-repeat: no-repeat;
+      background-size: 100%;
+       background-image: linear-gradient(
+          to right,
+          var(--background-image),
+          var(--background-image)
+        ),
+        url(../images/header-tablet2x.jpg);
+   }}
+
+@media screen and (min-width: 1200px) {
+  .board {
+    background-size: cover;
+
+      background-repeat: no-repeat;
+      background-size: 100%;
+     background-image: linear-gradient(
+          to right,
+          var(--background-image),
+          var(--background-image)
+        ),
+        url(../images/header-desktop1x.jpg);  
+  }}
+
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .board {
+      background-size: cover;
+ 
+      background-repeat: no-repeat;
+      background-size: 100%;
+       background-image: linear-gradient(
+          to right,
+          var(--background-image),
+          var(--background-image)
+        ),
+        url(../images/header-desktop2x.jpg);
+}}
+
+
+
   
 
 
@@ -120,4 +219,3 @@
 //       letter-spacing: 0.06em;
 //     }
 //   }
-  
