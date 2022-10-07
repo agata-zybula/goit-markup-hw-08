@@ -40,6 +40,7 @@
   .container {
     max-width: 480px;
     padding: 0px 15px;
+    margin: 0 auto;
   }
 }
 @media screen and (min-width: 768px) {
@@ -225,8 +226,6 @@ body {
   min-width: 320px;
   background-image: -webkit-gradient(linear, left top, right top, from(var(--background-image)), to(var(--background-image))), url(../images/header-mobile1x.jpg);
   background-image: linear-gradient(to right, var(--background-image), var(--background-image)), url(../images/header-mobile1x.jpg);
-  background-repeat: no-repeat;
-  background-size: 100%;
   background-size: cover;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -242,6 +241,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   gap: 30px;
+  padding: 118px 0px;
   max-width: 1600px;
 }
 .board__button {
@@ -285,47 +285,24 @@ body {
 
 @media screen and (max-width: 768px) and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .board {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-size: 100%;
     background-image: -webkit-gradient(linear, left top, right top, from(var(--background-image)), to(var(--background-image))), url(../images/header-mobile2x.jpg);
     background-image: linear-gradient(to right, var(--background-image), var(--background-image)), url(../images/header-mobile2x.jpg);
+    background-size: cover;
   }
 }
 @media screen and (min-width: 768px) {
   .board {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-size: 100%;
     background-image: -webkit-gradient(linear, left top, right top, from(var(--background-image)), to(var(--background-image))), url(../images/header-tablet1x.jpg);
     background-image: linear-gradient(to right, var(--background-image), var(--background-image)), url(../images/header-tablet1x.jpg);
-  }
-}
-@media screen and (max-width: 1200px) and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .board {
     background-size: cover;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-image: -webkit-gradient(linear, left top, right top, from(var(--background-image)), to(var(--background-image))), url(../images/header-tablet2x.jpg);
-    background-image: linear-gradient(to right, var(--background-image), var(--background-image)), url(../images/header-tablet2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
   .board {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-size: 100%;
     background-image: -webkit-gradient(linear, left top, right top, from(var(--background-image)), to(var(--background-image))), url(../images/header-desktop1x.jpg);
     background-image: linear-gradient(to right, var(--background-image), var(--background-image)), url(../images/header-desktop1x.jpg);
-  }
-}
-@media screen and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .board {
     background-size: cover;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-image: -webkit-gradient(linear, left top, right top, from(var(--background-image)), to(var(--background-image))), url(../images/header-desktop2x.jpg);
-    background-image: linear-gradient(to right, var(--background-image), var(--background-image)), url(../images/header-desktop2x.jpg);
+    max-width: 1600px;
   }
 }
 .box__image {

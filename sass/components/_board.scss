@@ -1,4 +1,3 @@
-
 .board {
   // width: 100%;
   min-width: 320px;
@@ -8,15 +7,15 @@
           var(--background-image)
         ),
     url(../images/header-mobile1x.jpg);
-  background-repeat: no-repeat;
-  background-size: 100%;
+  
+  
   background-size: cover;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   display: flex;
   gap: 30px;
-  // padding: 118px 0px;
+  padding: 118px 0px;
   max-width: 1600px;
     // margin: 0 auto;
 
@@ -77,83 +76,72 @@
       letter-spacing: 0.06em;
   }}
 
-  @media screen and (max-width: 768px) and (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .board {
-   background-size: cover;
-      
-      background-repeat: no-repeat;
-      background-size: 100%;
-      background-image: linear-gradient(
+  @media screen and (max-width: 768px) and 
+(min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx){
+.board {
+  background-image: linear-gradient(
           to right,
           var(--background-image),
           var(--background-image)
         ),
-        url(../images/header-mobile2x.jpg);
-}}
-
-  @media screen and (min-width: 768px) {
-  .board {
-    background-size: cover;
-      
-      background-repeat: no-repeat;
-      background-size: 100%;
-     background-image: linear-gradient(
-          to right,
-          var(--background-image),
-          var(--background-image)
-        ),
-        url(../images/header-tablet1x.jpg);
-  }}
-    
-  
-  @media screen and (max-width: 1200px) and (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .board {
-      background-size: cover;
-     
-      background-repeat: no-repeat;
-      background-size: 100%;
-       background-image: linear-gradient(
-          to right,
-          var(--background-image),
-          var(--background-image)
-        ),
-        url(../images/header-tablet2x.jpg);
-   }}
-
-@media screen and (min-width: 1200px) {
-  .board {
-    background-size: cover;
-
-      background-repeat: no-repeat;
-      background-size: 100%;
-     background-image: linear-gradient(
-          to right,
-          var(--background-image),
-          var(--background-image)
-        ),
-        url(../images/header-desktop1x.jpg);  
-  }}
-
-  @media screen and (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .board {
-      background-size: cover;
+    url(../images/header-mobile2x.jpg);
  
-      background-repeat: no-repeat;
-      background-size: 100%;
-       background-image: linear-gradient(
+  background-size: cover;}}
+  
+
+@media screen and (min-width: 768px) {
+  .board {
+  background-image: linear-gradient(
           to right,
           var(--background-image),
           var(--background-image)
         ),
-        url(../images/header-desktop2x.jpg);
-}}
+    url(../images/header-tablet1x.jpg);
+  background-size: cover;}}
 
+  // ta wersja powoduje, ze nie dziala wersja na mobile
+
+  // @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+  //   (min-resolution: 192dpi),
+  //   (min-resolution: 2dppx) {
+  //   .board {
+  // background-image: linear-gradient(
+  //         to right,
+  //         var(--background-image),
+  //         var(--background-image)
+  //       ),
+  //   url(../images/header-tablet2x.jpg);
+  // background-size: cover;}}
+
+  @media screen and (min-width: 1200px) {
+  .board {
+  background-image: linear-gradient(
+          to right,
+          var(--background-image),
+          var(--background-image)
+        ),
+    url(../images/header-desktop1x.jpg);
+  background-size: cover;
+max-width: 1600px;}}
+
+
+// przy desktopie na 192 dpi tak jak przy tablecie - psuje mi sie widok na mobile
+
+// @media screen and (min-width: 1200px) and
+// (min-device-pixel-ratio: 2),
+// (min-resolution: 192dpi),
+// (min-resolution: 2dppx){
+//   .board {
+//   background-image: linear-gradient(
+//           to right,
+//           var(--background-image),
+//           var(--background-image)
+//         ),
+//     url(../images/header-desktop2x.jpg);
+//   background-size: cover;
+// max-width: 1600px;}}
 
 
   
