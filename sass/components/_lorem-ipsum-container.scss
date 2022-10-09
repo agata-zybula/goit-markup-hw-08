@@ -6,9 +6,8 @@
 }
 
 .images {
-    width: 1170px;
+    width: 100%;
     gap: 30px;
-    padding:0%;
     list-style-type: none;
     display: block;
     text-align: center;
@@ -17,7 +16,7 @@
 
   .container-descriptions {
     font-family: "Roboto";
-   width: 450px;
+   width: 100%;
    font-weight: 700;
    font-size: 14px;
    line-height: 1.14;
@@ -26,7 +25,7 @@
    margin-bottom: 10px;
 
     &__text {
-      width: 450px;
+      width: 100%;
       font-size: 14px;
       color: var(--lightgrey);
       line-height: 1.71;
@@ -42,6 +41,60 @@
     margin-bottom: 30px;
     padding: 25px 102px;
   }
+
+  @media screen and (min-width: 768px) {
+  .lorem {
+ align-items: center;
+ justify-content: center;
+ display: flex;
+ flex-direction: row;
+  flex-wrap: wrap;
+ align-items: center;
+ 
+}
+
+.images {
+    width: 100%;
+    gap: 30px;
+    row-gap: 30px;
+    list-style-type: none;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+.images li {
+  flex-basis: calc((100% - 30px)/2);
+}
+
+  .container-descriptions {
+    font-family: "Roboto";
+   width: 100%;
+   font-weight: 700;
+   font-size: 14px;
+   line-height: 1.14;
+   color: var(--darkgrey);
+   letter-spacing: 0.03em;
+   margin-bottom: 10px;
+
+    &__text {
+      width: 100%;
+      font-size: 14px;
+      color: var(--lightgrey);
+      line-height: 1.71;
+      letter-spacing: 0.03em;
+      margin-bottom: 30px;
+      text-align: left;
+    }
+  }
+
+  .lorem li > div {
+    background: var(--buttonbackground);
+    border-radius: 4px;
+    margin-bottom: 30px;
+    padding: 25px 102px;
+  }
+  }
   
   
   
@@ -49,51 +102,51 @@
 
  
 
-
-// .lorem {
-//  align-items: center;
-//     justify-content: center;
-    
-//     display: flex;
+ @media screen and (min-width: 1200px) {
+.lorem {
+  align-items: center;
+  justify-content: center;
+  display: flex;
  
-// }
+}
 
-// .images {
-//     width: 1170px;
-//     gap: 30px;
-//     padding:0%;
-//     list-style-type: none;
-//     display: flex;
+.images {
+    width: 1170px;
+    gap: 30px;
+    padding:0%;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: nowrap;
 
-//   }
+  }
 
-//   .container-descriptions {
-//     font-family: "Roboto";
-//    width: 270px;
-//    font-weight: 700;
-//    font-size: 14px;
-//    line-height: 1.14;
-//    color: var(--darkgrey);
-//    letter-spacing: 0.03em;
-//    margin-bottom: 10px;
+  .container-descriptions {
+    font-family: "Roboto";
+   width: 270px;
+   font-weight: 700;
+   font-size: 14px;
+   line-height: 1.14;
+   color: var(--darkgrey);
+   letter-spacing: 0.03em;
+   margin-bottom: 10px;
 
-//     &__text {
-//       width: 270px;
-//       font-size: 14px;
-//       color: var(--lightgrey);
-//       line-height: 1.71;
-//       letter-spacing: 0.03em;
-//       margin-bottom: 30px;
-//       text-align: left;
-//     }
-//   }
+    &__text {
+      width: 270px;
+      font-size: 14px;
+      color: var(--lightgrey);
+      line-height: 1.71;
+      letter-spacing: 0.03em;
+      // margin-bottom: 30px;
+      text-align: left;
+    }
+  }
 
-//   .lorem li > div {
-//     background: var(--buttonbackground);
-//     border-radius: 4px;
-//     margin-bottom: 30px;
-//     padding: 25px 102px;
-//   }
+  .lorem li > div {
+    background: var(--buttonbackground);
+    border-radius: 4px;
+    // margin-bottom: 30px;
+    padding: 25px 102px;
+  }}
   
   
   

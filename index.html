@@ -18,13 +18,13 @@
   <header class="header">
     <div class="header__style container">
       <a href="index.html" class="main-logo"><span class="main-logo__text">Web</span>Studio</a>
-      <a class="header__menu" href="#">
+      <button type="button" class="header__menu" href="#">
             <svg class="header__menu-styles" width="40" height="40">
               <use href="./images/icons-mobile-tablet.svg#icon-menu"></use>
             </svg>
-          </a>
+          </button>
 
-      <!-- <nav>
+      <nav>
         <ul class="header__nav">
           <li><a href="index.html" class="header__nav-link header__nav-link--border header__nav-link--color">Agencja</a></li>
           <li>
@@ -46,12 +46,12 @@
               <use href="./images/icons.svg#icon-smartphone"></use>
             </svg>+48 111 111 111</a>
         </li>
-      </ul> -->
+      </ul>
     </div>
   </header>
 
   <main>
-    <section class="board section container">
+    <section class="board section">
           <h1 class="board__title">
             EFEKTYWNE ROZWIĄZANIA<br />DLA WASZEGO BIZNESU
           </h1>
@@ -109,8 +109,8 @@
         </ul>
         </section>
 
-    <!-- <section class="section container">
-      <h2 class="title">Czym się zajmujemy</h2>
+    <section class="section container">
+      <h2 class="title-what-we-do">Czym się zajmujemy</h2>
       <ul class="cards-set">
         <li>
           <div class="cards-set__position">
@@ -131,37 +131,40 @@
           <img src="./images/image(2).jpg" alt="Tablet" width="370" height="294" />
         </li>
       </ul>
-    </section> -->
+    </section>
     <section class="section section--background">
       <div class="container">
         <h2 class="title title--padding">Nasz zespół</h2>
-        <ul class="box">
+        <ul class="our-team">
           <li>
-            <figure class="box__styles">
-              <img src="./images/image(3).jpg" alt="John Doe" width="270" height="260" />
-              <figcaption class="box__padding">
-                <h3 class="box__name">John Doe</h3>
-                <p class="box__description">Product Designer</p>
-                <ul class="box__icons">
+            <figure class="our-team__styles">
+              <img class="our-team__width-height" src="./images/designermobile1x.jpg" width="450" height="460" alt="John Doe" srcset="
+                  ./images/designermobile1x.jpg 1x,
+                  ./images/designermobile2x.jpg 2x
+                ">
+              <figcaption class="our-team__padding">
+                <h3 class="our-team__name">John Doe</h3>
+                <p class="our-team__description">Product Designer</p>
+                <ul class="our-team__icons">
                   <li>
-                    <a class="box__icons-styles" href="#">
+                    <a class="our-team__icons-styles" href="#">
                       <svg width="20" height="20">
                         <use href="./images/icons.svg#icon-instagram-2"></use>
                       </svg></a>
                   </li>
 
-                  <li><a class="box__icons-styles" href="#">
+                  <li><a class="our-team__icons-styles" href="#">
                       <svg width="20" height="20">
                         <use href="./images/icons.svg#icon-twitter-1"></use>
                       </svg></a></li>
                   <li>
-                    <a class="box__icons-styles" href="#">
+                    <a class="our-team__icons-styles" href="#">
                       <svg width="20" height="20">
                         <use href="./images/icons.svg#icon-facebook-1"></use>
                       </svg></a>
                   </li>
                   <li>
-                    <a class="box__icons-styles" href="#">
+                    <a class="our-team__icons-styles" href="#">
                       <svg width="20" height="20">
                         <use href="./images/icons.svg#icon-linkedin-1"></use>
                       </svg></a>
@@ -171,31 +174,34 @@
             </figure>
           </li>
           <li>
-            <figure class="box__styles">
-              <img src="./images/image(4).jpg" alt="John Doe" width="270" height="260" />
-              <figcaption class="box__padding">
-                <h3 class="box__name">John Doe</h3>
-                <p class="box__description">Frontend Developer</p>
-                <ul class="box__icons">
+            <figure class="our-team__styles">
+              <img class="our-team__width-height" src="./images/frontendmobile1x.jpg" width="450" height="460" alt="John Doe" srcset="
+                  ./images/frontendmobile1x.jpg 1x,
+                  ./images/frontendmobile2x.jpg 2x
+                ">
+              <figcaption class="our-team__padding">
+                <h3 class="our-team__name">John Doe</h3>
+                <p class="our-team__description">Frontend Developer</p>
+                <ul class="our-team__icons">
                   <li>
-                    <a class="box__icons-styles" href="#">
+                    <a class="our-team__icons-styles" href="#">
                       <svg width="20" height="20">
                         <use href="./images/icons.svg#icon-instagram-2"></use>
                       </svg></a>
                   </li>
 
-                  <li><a class="box__icons-styles" href="#">
+                  <li><a class="our-team__icons-styles" href="#">
                       <svg width="20" height="20">
                         <use href="./images/icons.svg#icon-twitter-1"></use>
                       </svg></a></li>
                   <li>
-                    <a class="box__icons-styles" href="#">
+                    <a class="our-team__icons-styles" href="#">
                       <svg width="20" height="20">
                         <use href="./images/icons.svg#icon-facebook-1"></use>
                       </svg></a>
                   </li>
                   <li>
-                    <a class="box__icons-styles" href="#">
+                    <a class="our-team__icons-styles" href="#">
                       <svg width="20" height="20">
                         <use href="./images/icons.svg#icon-linkedin-1"></use>
                       </svg></a>
@@ -205,31 +211,34 @@
             </figure>
           </li>
           <li>
-            <figure class="box__styles">
-              <img src="./images/image(5).jpg" alt="John Doe" width="270" height="260" />
-              <figcaption class="box__padding">
-                <h3 class="box__name">John Doe</h3>
-                <p class="box__description">Marketing</p>
-                <ul class="box__icons">
+            <figure class="our-team__styles">
+              <img class="our-team__width-height" src="./images/marketingmobile1x.jpg" width="450" height="460" alt="John Doe" srcset="
+                  ./images/marketingmobile1x.jpg 1x,
+                  ./images/marketingmobile2x.jpg 2x
+                ">
+              <figcaption class="our-team__padding">
+                <h3 class="our-team__name">John Doe</h3>
+                <p class="our-team__description">Marketing</p>
+                <ul class="our-team__icons">
                   <li>
-                    <a class="box__icons-styles" href="#">
+                    <a class="our-team__icons-styles" href="#">
                       <svg width="20" height="20">
                         <use href="./images/icons.svg#icon-instagram-2"></use>
                       </svg></a>
                   </li>
 
-                  <li><a class="box__icons-styles" href="#">
+                  <li><a class="our-team__icons-styles" href="#">
                       <svg width="20" height="20">
                         <use href="./images/icons.svg#icon-twitter-1"></use>
                       </svg></a></li>
                   <li>
-                    <a class="box__icons-styles" href="#">
+                    <a class="our-team__icons-styles" href="#">
                       <svg width="20" height="20">
                         <use href="./images/icons.svg#icon-facebook-1"></use>
                       </svg></a>
                   </li>
                   <li>
-                    <a class="box__icons-styles" href="#">
+                    <a class="our-team__icons-styles" href="#">
                       <svg width="20" height="20">
                         <use href="./images/icons.svg#icon-linkedin-1"></use>
                       </svg></a>
@@ -239,31 +248,34 @@
             </figure>
           </li>
           <li>
-            <figure class="box__styles">
-              <img src="./images/image(6).jpg" alt="John Doe" width="270" height="260" />
-              <figcaption class="box__padding">
-                <h3 class="box__name">John Doe</h3>
-                <p class="box__description">UI Designer</p>
-                <ul class="box__icons">
+            <figure class="our-team__styles">
+              <img class="our-team__width-height" src="./images/uimobile1x.jpg" width="450" height="460" alt="John Doe" srcset="
+                  ./images/uimobile1x.jpg 1x,
+                  ./images/uimobile2x.jpg 2x
+                ">
+              <figcaption class="our-team__padding">
+                <h3 class="our-team__name">John Doe</h3>
+                <p class="our-team__description">UI Designer</p>
+                <ul class="our-team__icons">
                   <li>
-                    <a class="box__icons-styles" href="#">
+                    <a class="our-team__icons-styles" href="#">
                       <svg width="20" height="20">
                         <use href="./images/icons.svg#icon-instagram-2"></use>
                       </svg></a>
                   </li>
 
-                  <li><a class="box__icons-styles" href="#">
+                  <li><a class="our-team__icons-styles" href="#">
                       <svg width="20" height="20">
                         <use href="./images/icons.svg#icon-twitter-1"></use>
                       </svg></a></li>
                   <li>
-                    <a class="box__icons-styles" href="#">
+                    <a class="our-team__icons-styles" href="#">
                       <svg width="20" height="20">
                         <use href="./images/icons.svg#icon-facebook-1"></use>
                       </svg></a>
                   </li>
                   <li>
-                    <a class="box__icons-styles" href="#">
+                    <a class="our-team__icons-styles" href="#">
                       <svg width="20" height="20">
                         <use href="./images/icons.svg#icon-linkedin-1"></use>
                       </svg></a>
@@ -278,42 +290,42 @@
     <section class="section container">
       <h2 class="title">Nasi klienci</h2>
       <ul class="box">
-        <li>
+        <li class="box__logo">
           <a class="box__image" href="index.html">
             <svg class="box__image-styles" width="106" height="60">
               <use href="./images/icons.svg#icon-Logo"></use>
             </svg>
           </a>
         </li>
-        <li>
+        <li class="box__logo">
           <a class="box__image" href="index.html">
             <svg class="box__image-styles" width="106" height="60">
               <use href="./images/icons.svg#icon-Logo-1"></use>
             </svg>
           </a>
         </li>
-        <li>
+        <li class="box__logo">
           <a class="box__image" href="index.html">
             <svg class="box__image-styles" width="106" height="60">
               <use href="./images/icons.svg#icon-Logo-2"></use>
             </svg>
           </a>
         </li>
-        <li>
+        <li class="box__logo">
           <a class="box__image" href="index.html">
             <svg class="box__image-styles" width="106" height="60">
               <use href="./images/icons.svg#icon-Logo-3"></use>
             </svg>
           </a>
         </li>
-        <li>
+        <li class="box__logo">
           <a class="box__image" href="index.html">
             <svg class="box__image-styles" width="106" height="60">
               <use href="./images/icons.svg#icon-Logo-4"></use>
             </svg>
           </a>
         </li>
-        <li>
+        <li class="box__logo">
           <a class="box__image" href="index.html">
             <svg class="box__image-styles" width="106" height="60">
               <use href="./images/icons.svg#icon-Logo-5"></use>
@@ -327,6 +339,7 @@
 
   <footer class="footer">
     <div class="container container__display">
+      <div class="display-tablet">
       <section class="container__display-block">
         <a href="index.html" class="main-logo"><span
             class="main-logo__text">Web</span><span class="main-logo__text-bottom">Studio</span></a>
@@ -366,7 +379,7 @@
               </svg></a>
           </li>
         </ul>
-
+</div>
       </section>
 
       <section class="section-form">
@@ -381,7 +394,7 @@
     </div>
   </footer>
 
-  <!-- <div class="backdrop is-hidden" data-modal>
+  <div class="backdrop is-hidden" data-modal>
     <div class="modal">
       <a href="#">
       <button type="button" class="modal__button" data-modal-close><svg width="11" height="11">
@@ -415,7 +428,7 @@
         </form>
     </div>
   </div>
-  <script src="./js/modal.js"></script> -->
+  <script src="./js/modal.js"></script>
 </body>
 
 </html>

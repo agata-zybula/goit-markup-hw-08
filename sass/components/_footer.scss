@@ -74,8 +74,8 @@
   .social-media {
     width: 206px;
     height: 80px;
-    // margin-left: 70px;
-    margin-top: 30px;
+    margin: 60px auto;
+   
     
 
     &__header {
@@ -93,6 +93,7 @@
     align-content: center;
     align-items: center;
     text-align: center;
+    
     }
 
     &__style {
@@ -134,9 +135,7 @@
 
 .section-form {
     margin-top: 30px;
-    // margin-left: auto;
-    // margin-right: 0px;
-     justify-content: center;
+    justify-content: center;
     align-content: center;
     align-items: center;
     text-align: center;
@@ -153,18 +152,17 @@
       margin-bottom: 20px;
       text-transform: uppercase;
       }
-
-      // off for mobile footer
     
     &__flex {
-        justify-content: center;
+    justify-content: center;
     align-content: center;
     align-items: center;
     text-align: center;
       }
 
     &__input {
-      width: 358px;
+      width: 100%;
+      max-width: 450px;
       height: 50px;
       border: 1px solid var(--border-signup);
       filter: drop-shadow(0px 4px 4px var(--boxshadowcolor));
@@ -178,6 +176,7 @@
       line-height: 1, 25;
       letter-spacing: 0.03em;
       padding-left: 16px;
+      margin-bottom: 20px;
       }
 
     &__button {
@@ -194,12 +193,12 @@
         border-radius: 4px;
         border: none;
         letter-spacing: 0.06em;
-        // margin-left: 9px;
         cursor: pointer;
         align-items: center;
         text-align: center;
         display: flex;
-        padding-left: 42px;        
+        padding-left: 42px;
+        margin: 0 auto;        
       }
 
       &__location-button {
@@ -214,209 +213,65 @@
         margin-left: 24px;
       }
     }
-      
 
-  
+    @media screen and (min-width: 768px) {
+  .display-tablet {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+  }
 
+ 
 
+  .social-media {
+    margin-top: 30px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
 
-
-  
-
-
-
-// .footer {
-//     padding-top: 60px;
-//     padding-bottom: 60px;
-//     background: var(--mediumgrey);
-//   }
-
-//   .main-logo {
-//     font-family: "Raleway";
-//     font-weight: 700;
-//     font-size: 26px;
-//     color: var(--black);
-//     text-decoration: none;
-//     line-height: 1.19;
-//     display: flex;
-//     padding: 25px 0px 25px 0px;
-//     letter-spacing: 0.03em;
-
-//     &__text {
-//       color: var(--blue);
-//     }
-
-//     &__text-bottom {
-//       color: var(--white);
-//     }
-//   }
-
-//   .address {
-//     color: var(--white);
-//     line-height: 1.71;
-//     font-style: normal;
-//     letter-spacing: 0.03em;
-//     white-space: nowrap;
-//     margin-bottom: 9px;
-//     font-style: normal;
-//   }
-
-//   .contact {
-//     font-style: normal;
-//     list-style-type: none;
-
-//     &__margin {
-//       margin-bottom: 9px;
-//     }
-
-//     &__style {
-//       color: var(--footerlinks);
-//       text-decoration: none;
-//       line-height: 1.14;
-//       font-style: normal;
-//       font-weight: 400;
-//       font-size: 14px;
-//       letter-spacing: 0.03em;
-
-//       &--color {
-//         transition-duration: 250ms;
-//         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-//         transition-property: color;
-//       }
-
-//       &--color:hover,
-//       &--color:focus {
-//         color: var(--blue);
-//       }
-//     }
-//   }
-
-//   .social-media {
-//     width: 206px;
-//     height: 80px;
-//     margin-left: 70px;
-//     margin-top: 30px;
-
-//     &__header {
-//       font-family: "Roboto";
-//       font-style: normal;
-//       font-weight: 700;
-//       font-size: 14px;
-//       line-height: 1.14;
-//       letter-spacing: 0.03em;
-//       color: var(--white);
-//       margin-top: 0px;
-//       margin-bottom: 20px;
-//       text-transform: uppercase;
-//     }
-
-//     &__style {
-//       display: flex;
-//       list-style-type: none;
-//       gap: 10px;
-//       list-style-position: outside;
-//     }
-
-//     &__icon {
-//       width: 44px;
-//       height: 44px;
-//       padding: 12px;
-//       fill: var(--white);
-//       border-radius: 50%;
-//       background-color: rgba(255, 255, 255, 0.1);
-//       display: flex;
-//       align-items: center;
-//       justify-content: center;
-//       width: 44px;
-//       height: 44px;
-//       transition-duration: 250ms;
-//       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-//       transition-property: fill, background-color;
-
-//       &:hover,
-//       &:focus {
-//        fill: var(--white);
-//        background-color: var(--blue);
-//        padding: 12px;
-//        border-radius: 50%;
-//        display: flex;
-//        align-items: center;
-//        justify-content: center;
-//       }
-//     }
-//   }
-
-// .section-form {
-//     margin-top: 30px;
-//     margin-left: auto;
-//     margin-right: 0px;
     
-//     &__header {
-//       font-family: "Roboto";
-//       font-style: normal;
-//       font-weight: 700;
-//       font-size: 14px;
-//       line-height: 1.14;
-//       letter-spacing: 0.03em;
-//       color: var(--white);
-//       margin-top: 0px;
-//       margin-bottom: 20px;
-//       text-transform: uppercase;
-//       }
-    
-//     &__flex {
-//         display: flex;
-//       }
 
-//     &__input {
-//       width: 358px;
-//       height: 50px;
-//       border: 1px solid var(--border-signup);
-//       filter: drop-shadow(0px 4px 4px var(--boxshadowcolor));
-//       border-radius: 4px;
-//       background: var(--mediumgrey);
-//       color: var(--white);
-//       font-family: "Roboto";
-//       font-style: normal;
-//       font-weight: 400;
-//       font-size: 16px;
-//       line-height: 1, 25;
-//       letter-spacing: 0.03em;
-//       padding-left: 16px;
-//       }
 
-//     &__button {
-//         width: 200px;
-//         height: 50px;
-//         background-color: var(--blue);
-//         color: var(--white);
-//         font-family: "Roboto";
-//         font-style: normal;
-//         font-weight: 700;
-//         font-size: 16px;
-//         line-height: 1.87;
-//         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-//         border-radius: 4px;
-//         border: none;
-//         letter-spacing: 0.06em;
-//         margin-left: 9px;
-//         cursor: pointer;
-//         align-items: center;
-//         text-align: center;
-//         display: flex;
-//         padding-left: 42px;
-//       }
-
-//       &__icon {
-//         fill: var(--white);
-//         margin-left: 24px;
-//       }
-//     }
+.section-form {
+    &__flex {
+    align-items: flex-start;
+      }}}
       
+@media screen and (min-width: 1200px) {
+  .main-logo {
+    justify-content: flex-start;
+  }
 
-  
+  .contact {
+    text-align: left;
+  }
 
+  .social-media {
+    margin-left: 70px;
+    margin-top: 30px;
 
+    &__header {
+      text-align: left;
+    }
+  }
 
+.section-form {
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: 0px;
+    
+    &__header {
+      text-align: left;
+      }
+    
+    &__flex {
+        display: flex;
+      }
 
-  
+    &__input {
+      width: 358px;
+      }
+
+    &__button {
+        margin-left: 9px;
+      }}}

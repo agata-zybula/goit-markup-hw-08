@@ -1,7 +1,40 @@
+.title-what-we-do {
+  display: none;
+}
+
+.cards-set {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+
+.title-what-we-do {
+  display: none;
+}
+
+.cards-set {
+  display: none;
+}}
+
+@media screen and (min-width: 1200px) {
+
+.title-what-we-do {
+  display: flex;
+  font-weight: 700;
+  font-size: 28px;
+  color: var(--darkgrey);
+  line-height: 1.17;
+  padding-bottom: 50px;
+  letter-spacing: 0.03em;
+  padding-bottom: 50px;
+  justify-content: center;
+  }
+
 .cards-set {
   display: flex;
   gap: 30px;
   list-style-type: none;
+  justify-content: center;
 
   &__label {
     font-family: "Roboto";
@@ -25,4 +58,4 @@
   &__position {
     position: relative;
   }
-}
+}}

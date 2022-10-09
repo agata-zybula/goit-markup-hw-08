@@ -1,7 +1,22 @@
-    .box__image {
+.box {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    row-gap: 30px;
+    gap: 30px;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    &__logo {
+    width: 100%;
+    max-width: 270px;
+    flex-basis: calc((100% - 30px)/2);
+    }
+
+    &__image {
     display: flex;
     align-items: center;
-    width: 170px;
     height: 92px;
     background-color: var(--white);
     border: 1px solid var(--color-icons);
@@ -15,20 +30,20 @@
     border: 1px solid var(--blue);
     }
 
-   & .box__image-styles {
+    & .box__image-styles {
     fill: var(--color-icons);
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-property: border, fill;
     }
 
-   &:hover .box__image-styles,
-   &:focus .box__image-styles {
+    &:hover .box__image-styles,
+    &:focus .box__image-styles {
     fill: var(--blue);
     }
   }
-  
-  .box__image-styles {
+
+  &__image-styles {
     margin: 0 auto;
     fill: var(--color-icons);
     transition-duration: 250ms;
@@ -39,58 +54,32 @@
     &:focus {
     fill: var(--blue);
     }
-  }
+}}
+
+   
+   
+   @media screen and (min-width: 768px) {
+    
+    .box {
+    &__logo {
+    flex-basis: calc((100% - 60px)/3);
+    }}}
+
+
+   @media screen and (min-width: 1200px) {
+  
+    .box {
+  // display: flex;
+  flex-wrap: nowrap;
+  // gap: 30px;
+  // list-style-type: none;
+}}
 
  
 
 
 
 
-
-  
-  
-  // .box__image {
-  //   display: flex;
-  //   align-items: center;
-  //   width: 170px;
-  //   height: 92px;
-  //   background-color: var(--white);
-  //   border: 1px solid var(--color-icons);
-  //   border-radius: 4px;
-  //   transition-duration: 250ms;
-  //   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  //   transition-property: border, fill;
-
-  //   &:hover,
-  //   &:focus {
-  //   border: 1px solid var(--blue);
-  //   }
-
-  //  & .box__image-styles {
-  //   fill: var(--color-icons);
-  //   transition-duration: 250ms;
-  //   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  //   transition-property: border, fill;
-  //   }
-
-  //  &:hover .box__image-styles,
-  //  &:focus .box__image-styles {
-  //   fill: var(--blue);
-  //   }
-  // }
-  
-  // .box__image-styles {
-  //   margin: 0 auto;
-  //   fill: var(--color-icons);
-  //   transition-duration: 250ms;
-  //   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  //   transition-property: fill;
-
-  //   &:hover,
-  //   &:focus {
-  //   fill: var(--blue);
-  //   }
-  // }
 
  
 
