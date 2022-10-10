@@ -284,6 +284,8 @@ body {
     background-image: linear-gradient(to right, var(--background-image), var(--background-image)), url(../images/header-desktop2x.jpg);
     background-size: cover;
     max-width: 1600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 }
 .box {
