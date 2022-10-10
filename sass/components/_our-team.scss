@@ -8,10 +8,10 @@ justify-content: center;
 flex-direction: row;
 flex-wrap: wrap;
 
-
-&__basis {
-      flex-basis: 100%;
+& li {
+  flex-basis: 100%;
 }
+
 
     &__styles {
     background: var(--white);
@@ -58,6 +58,8 @@ flex-wrap: wrap;
     display: flex;
     justify-content: center;
     gap: 10px;
+    width: fit-content;
+  margin: 0 auto;
     }
 
     &__icons-styles {
@@ -80,12 +82,17 @@ flex-wrap: wrap;
 
 
     @media screen and (min-width: 768px) {
-      .our-team {
-      &__basis{
+      .our-team li {
         flex-basis: calc((100% - 30px)/2);
-      }}}
+      }
+      .our-team__icons {
+        margin: 0 auto;
+      }}
 
     @media screen and (min-width: 1200px) {
       .our-team {
       flex-wrap: nowrap;
+      }
+      &__icons {
+        margin: 0 auto;
       }}
