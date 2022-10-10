@@ -26,6 +26,10 @@ display: none;
 
 @media screen and (min-width: 1200px) {
 
+  .container-hidden {
+    display:block;
+  }
+
 .title-what-we-do {
   display: flex;
   font-weight: 700;
@@ -55,7 +59,7 @@ display: none;
     color: var(--white);
     width: 370px;
     height: 70px;
-    background-color: var(--background-image);
+    background-color: var(--background-label);
     text-align: center;
     padding-top: 27px;
     position: absolute;

@@ -72,17 +72,17 @@
   background-size: cover;}}
 
 
-  // @media screen and (max-width: 1200px) and (min-device-pixel-ratio: 2),
-  //   (min-resolution: 192dpi),
-  //   (min-resolution: 2dppx) {
-  //   .board {
-  // background-image: linear-gradient(
-  //         to right,
-  //         var(--background-image),
-  //         var(--background-image)
-  //       ),
-  //   url(../images/header-tablet2x.jpg);
-  // background-size: cover;}}
+  @media screen and (max-width: 1200px) and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .board {
+  background-image: linear-gradient(
+          to right,
+          var(--background-image),
+          var(--background-image)
+        ),
+    url(../images/header-tablet2x.jpg);
+  background-size: cover;}}
 
   @media screen and (min-width: 1200px) {
   .board {
@@ -93,21 +93,29 @@
         ),
     url(../images/header-desktop1x.jpg);
   background-size: cover;
+max-width: 1600px;
+padding-top: 200px;
+padding-bottom: 200px;
+}
+
+ .board__title {
+font-weight: 900;
+font-size: 44px;
+line-height: 1.36;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+}}
+
+@media screen and (min-width: 1200px) and
+(min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx){
+  .board {
+  background-image: linear-gradient(
+          to right,
+          var(--background-image),
+          var(--background-image)
+        ),
+    url(../images/header-desktop2x.jpg);
+  background-size: cover;
 max-width: 1600px;}}
-
-
-// przy desktopie na 192 dpi tak jak przy tablecie - psuje mi sie widok na mobile
-
-// @media screen and (min-width: 1200px) and
-// (min-device-pixel-ratio: 2),
-// (min-resolution: 192dpi),
-// (min-resolution: 2dppx){
-//   .board {
-//   background-image: linear-gradient(
-//           to right,
-//           var(--background-image),
-//           var(--background-image)
-//         ),
-//     url(../images/header-desktop2x.jpg);
-//   background-size: cover;
-// max-width: 1600px;}}

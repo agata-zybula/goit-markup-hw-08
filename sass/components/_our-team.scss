@@ -59,7 +59,7 @@ flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
     width: fit-content;
-  margin: 0 auto;
+    margin: 0 auto;
     }
 
     &__icons-styles {
@@ -93,6 +93,6 @@ flex-wrap: wrap;
       .our-team {
       flex-wrap: nowrap;
       }
-      &__icons {
+     .our-team__icons {
         margin: 0 auto;
       }}
