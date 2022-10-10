@@ -309,7 +309,6 @@ body {
       flex-wrap: wrap;
 }
 .box__logo {
-  max-width: 270px;
   -ms-flex-preferred-size: calc((100% - 30px) / 2);
       flex-basis: calc((100% - 30px) / 2);
 }
@@ -2119,7 +2118,7 @@ body {
 }
 .menu-container__margin {
   margin-top: auto;
-  margin-bottom: auto;
+  margin-bottom: 60px;
 }
 .menu-container__item {
   margin-bottom: 32px;
