@@ -8,6 +8,11 @@ justify-content: center;
 flex-direction: row;
 flex-wrap: wrap;
 
+
+&__basis {
+      flex-basis: 100%;
+}
+
     &__styles {
     background: var(--white);
     width: 100%;
@@ -20,6 +25,8 @@ flex-wrap: wrap;
     &__width-height {
       width: 100%;
       height: auto;
+      
+      
     }
 
     &__padding {
@@ -70,3 +77,15 @@ flex-wrap: wrap;
        padding: 12px;
        border-radius: 50%;
     }}}
+
+
+    @media screen and (min-width: 768px) {
+      .our-team {
+      &__basis{
+        flex-basis: calc((100% - 30px)/2);
+      }}}
+
+    @media screen and (min-width: 1200px) {
+      .our-team {
+      flex-wrap: nowrap;
+      }}
